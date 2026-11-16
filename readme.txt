@@ -3,7 +3,7 @@ Contributors: lihanlifestyle
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: e-commerce, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, theme-options, full-width-template, block-styles, wide-blocks, accessibility-ready
@@ -65,6 +65,10 @@ Edit the page with Elementor and choose the "Lihan Full Width" (or Elementor Ful
 * Filters: `lihan_defaults`, `lihan_header_sticky`, `lihan_show_floating_chat`, `lihan_show_breadcrumbs`, `lihan_show_page_title`, `lihan_contact_items`, `lihan_social_profiles`, `lihan_icons`, `lihan_home_sections`, `lihan_google_fonts_url`.
 
 == Changelog ==
+
+= 1.0.1 =
+* Updater falls back to github.com when the GitHub API rate limit is hit (common on shared hosting) and explains rate-limit errors.
+* Updater stays off in git checkouts so a development copy is never overwritten.
 
 = 1.0.0 =
 * Initial release.

@@ -12,6 +12,7 @@
  *   builds and uploads it).
  * - Auto-updates are on for this theme by default (turn off with
  *   define( 'LIHAN_AUTO_UPDATE', false ); in wp-config.php).
+ * - Skipped in git checkouts (the development copy), so updates never wipe .git.
  * - Private repo: add define( 'LIHAN_GITHUB_TOKEN', 'github_pat_…' );
  *   to wp-config.php (a fine-grained token with read access to the repo).
  */
@@ -28,7 +29,8 @@ final class Lihan_Theme_Updater {
     public function __construct() {
         $this->slug = get_template();
         $this->repo = $this->resolve_repo();
-        if ( ! $this->repo ) {
+        // A git checkout is a development copy: an update would replace the folder and wipe .git.
+        if ( ! $this->repo || is_dir( get_template_directory() . '/.git' ) ) {
             return;
         }
 
@@ -101,6 +103,16 @@ final class Lihan_Theme_Updater {
             ];
         }
 
+        $rate_limited = ! is_wp_error( $res )
+            && in_array( (int) wp_remote_retrieve_response_code( $res ), [ 403, 429 ], true )
+            && '0' === (string) wp_remote_retrieve_header( $res, 'x-ratelimit-remaining' );
+
+        // Public repo and the API said no (rate limit on shared hosting, outage):
+        // read the latest tag from github.com itself, which has no API quota.
+        if ( ! $release && ! $this->token() ) {
+            $release = $this->latest_release_from_web();
+        }
+
         // Remember why a check failed, for the admin notice.
         if ( $release ) {
             delete_site_option( 'lihan_theme_update_error' );
@@ -108,6 +120,8 @@ final class Lihan_Theme_Updater {
             $code = is_wp_error( $res ) ? 0 : (int) wp_remote_retrieve_response_code( $res );
             if ( is_wp_error( $res ) ) {
                 $why = 'Could not connect to GitHub (' . $res->get_error_message() . ').';
+            } elseif ( $rate_limited ) {
+                $why = 'GitHub API rate limit reached for this server. WordPress will try again automatically; adding LIHAN_GITHUB_TOKEN to wp-config.php raises the limit.';
             } elseif ( in_array( $code, [ 401, 403, 404 ], true ) ) {
                 $why = $this->token()
                     ? "GitHub refused the token (HTTP {$code}). Check LIHAN_GITHUB_TOKEN in wp-config.php: it may be expired, or lack read access to {$this->repo}."
@@ -121,6 +135,28 @@ final class Lihan_Theme_Updater {
         // Cache failures briefly so a GitHub hiccup doesn't hammer the API.
         set_site_transient( self::CACHE_KEY, $release, $release ? 6 * HOUR_IN_SECONDS : 30 * MINUTE_IN_SECONDS );
         return $release;
+    }
+
+    /**
+     * Fallback for public repos: github.com/OWNER/REPO/releases/latest redirects
+     * to .../releases/tag/vX.Y.Z, and release assets have a predictable URL.
+     */
+    private function latest_release_from_web() {
+        $res = wp_remote_head( "https://github.com/{$this->repo}/releases/latest", [
+            'timeout'     => 15,
+            'redirection' => 0,
+            'headers'     => [ 'User-Agent' => 'lihan-theme-updater' ],
+        ] );
+        $location = is_wp_error( $res ) ? '' : (string) wp_remote_retrieve_header( $res, 'location' );
+        if ( ! preg_match( '#/releases/tag/([^/?\#]+)$#', $location, $m ) ) {
+            return [];
+        }
+        $tag = rawurldecode( $m[1] );
+        return [
+            'version' => ltrim( $tag, 'vV' ),
+            'package' => "https://github.com/{$this->repo}/releases/download/" . rawurlencode( $tag ) . "/{$this->slug}.zip",
+            'url'     => "https://github.com/{$this->repo}/releases/tag/" . rawurlencode( $tag ),
+        ];
     }
 
     /**
