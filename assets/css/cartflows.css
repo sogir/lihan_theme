@@ -1,0 +1,165 @@
+/**
+ * Lihan: CartFlows compatibility.
+ *
+ * Loaded only on CartFlows step pages (inc/cartflows.php).
+ *
+ * - Every token has a fallback because CartFlows removes the theme's main.css on
+ *   its "Boxed" and "Canvas" templates.
+ * - Brand styling is scoped to body.lh-cf-themed. That class is added only when the
+ *   step (or its flow) does not use CartFlows' own design settings, so colours,
+ *   fonts and buttons the user sets in CartFlows always win.
+ * - Selectors only match the specificity of CartFlows' base stylesheet
+ *   (assets/css/checkout-template.css) and win by load order. CartFlows' Elementor
+ *   and block widget style controls are more specific and still take precedence.
+ * - Field padding and line-height are left alone: CartFlows' floating ("modern")
+ *   labels depend on them.
+ */
+
+/* Base typography on CartFlows' own templates (no theme stylesheet there). */
+body.lh-cf-step {
+	font-family: var(--lh-font, "Montserrat", Helvetica, Arial, sans-serif);
+	color: var(--lh-text, #111111);
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ---------------------------------------------------------------------------
+ * CartFlows design variables
+ * ------------------------------------------------------------------------- */
+
+.lh-cf-themed .wcf-embed-checkout-form {
+	--wcf-primary-color: var(--lh-primary, #0b2f29);
+	--wcf-heading-color: var(--lh-text, #111111);
+	--wcf-heading-font-weight: 500;
+	--wcf-btn-bg-color: var(--lh-primary, #0b2f29);
+	--wcf-btn-bg-hover-color: var(--lh-primary, #0b2f29);
+	--wcf-btn-text-color: var(--lh-primary-contrast, #ffffff);
+	--wcf-btn-hover-text-color: var(--lh-primary-contrast, #ffffff);
+	--wcf-text-color: var(--lh-text, #111111);
+	--wcf-link-color: var(--lh-primary, #0b2f29);
+	--wcf-field-label-color: var(--lh-muted, #6b6b6b);
+	--wcf-field-bg-color: var(--lh-bg, #ffffff);
+	/* 3:1 against white, so field edges stay visible (WCAG 1.4.11). */
+	--wcf-field-border-color: #8c8c8c;
+	--wcf-field-text-color: var(--lh-text, #111111);
+	--wcf-payment-section-bg-color: var(--lh-bg-alt, #f2f3f6);
+	--wcf-payment-section-desc-bg-color: var(--lh-bg, #ffffff);
+	font-family: var(--lh-font, "Montserrat", Helvetica, Arial, sans-serif);
+}
+
+/* Instant checkout sets its own defaults on a more specific selector. */
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-instant-checkout {
+	--wcf-primary-color: var(--lh-primary, #0b2f29);
+	--wcf-btn-bg-color: var(--lh-primary, #0b2f29);
+	--wcf-btn-bg-hover-color: var(--lh-primary, #0b2f29);
+}
+
+/* ---------------------------------------------------------------------------
+ * Headings
+ * ------------------------------------------------------------------------- */
+
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce-billing-fields > h3,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce-additional-fields > h3,
+.lh-cf-themed .wcf-embed-checkout-form #order_review_heading,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce #ship-to-different-address,
+.lh-cf-themed .wcf-embed-checkout-form .wcf-customer-info__notice + h3 {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1.12px;
+	text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------------
+ * Fields: square corners, at least 44px, visible focus
+ * ------------------------------------------------------------------------- */
+
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .form-row input.input-text,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .form-row textarea,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .form-row select,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce .input-text,
+.lh-cf-themed .wcf-embed-checkout-form .select2-container--default .select2-selection--single,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce form .form-row input.input-text,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce form .form-row textarea,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce form .form-row select,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce .input-text,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .select2-container--default .select2-selection--single {
+	min-height: 44px;
+	border-radius: 0;
+	font-family: inherit;
+}
+
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .form-row input.input-text:focus-visible,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .form-row textarea:focus-visible,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .form-row select:focus-visible,
+.lh-cf-themed .wcf-embed-checkout-form .select2-container--focus .select2-selection--single {
+	border-color: var(--wcf-primary-color);
+	box-shadow: 0 0 0 1px var(--wcf-primary-color);
+}
+
+/* Boxes CartFlows rounds (order summary, coupon, shipping methods, notices). */
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form.checkout_coupon,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .wcf-shipping-methods-wrapper table,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form .wcf-shipping-method-options #shipping_method,
+.lh-cf-themed .wcf-embed-checkout-form-two-column .woocommerce-checkout .wcf-order-wrap {
+	border-radius: 0;
+}
+
+/* ---------------------------------------------------------------------------
+ * Buttons: theme primary button (square, uppercase, tracked)
+ * ------------------------------------------------------------------------- */
+
+.lh-cf-themed .wcf-embed-checkout-form .wcf-custom-coupon-field button.wcf-submit-coupon,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce #order_review button:not(.js-woopayments-copy-test-number):not(.wcf-shipping-toggle),
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce #payment button:not(.js-woopayments-copy-test-number),
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce .wcf-customer-login-section__login-button,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce form.woocommerce-form-login .form-row button,
+.lh-cf-themed .wcf-embed-checkout-form form.checkout_coupon .button,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce #payment button:not(.js-woopayments-copy-test-number) {
+	border-radius: 0;
+	font-family: inherit;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.65px;
+}
+
+/* Place order: the large theme "add to bag" size. */
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce #payment #place_order,
+.lh-cf-themed .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce #payment button#place_order {
+	min-height: 52px;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce #payment button:not(.js-woopayments-copy-test-number):focus-visible,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce .wcf-customer-login-section__login-button:focus-visible {
+	outline: 2px solid var(--lh-gold, #aa791b);
+	outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+ * Product images and links
+ * ------------------------------------------------------------------------- */
+
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce .wcf-product-image,
+.lh-cf-themed .wcf-embed-checkout-form .woocommerce .wcf-product-image img {
+	border-radius: 0;
+}
+
+.lh-cf-themed .wcf-embed-checkout-form a:focus-visible {
+	outline: 2px solid var(--lh-gold, #aa791b);
+	outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+ * Theme extras that must never show on a funnel step (safety net in case a
+ * template prints them before reading the lihan_show_* filters).
+ * ------------------------------------------------------------------------- */
+
+.lh-cf-step #lh-cart-drawer,
+.lh-cf-step .lh-chat {
+	display: none;
+}
+
+/* Simple checkout: the country field stays enabled (it is submitted) but is hidden. */
+.wcf-embed-checkout-form .form-row.lh-hidden-field {
+	display: none !important;
+}

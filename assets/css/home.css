@@ -1,0 +1,1112 @@
+/**
+ * Lihan homepage sections.
+ *
+ * Loaded on the front page and on any page that renders a section through
+ * [lihan_section] or a Lihan Elementor widget. Depends on main.css tokens.
+ * Breakpoints: mobile < 768px, tablet 768–1023px, desktop >= 1024px.
+ */
+
+/* --------------------------------------------------------------------------
+ * Shared
+ * ----------------------------------------------------------------------- */
+/* The last section brings its own bottom padding. */
+.lh-main.lh-home {
+	padding-bottom: 0;
+}
+
+.lh-home-section {
+	position: relative;
+}
+
+/* Two white sections in a row share the space between them (like the reference). */
+.lh-home-section.lh-section:not(.lh-section--alt):not(.lh-section--warm) + .lh-home-section.lh-section:not(.lh-section--alt):not(.lh-section--warm) {
+	padding-top: calc(var(--lh-section-pad) * 0.4);
+}
+
+.lh-home-section .lh-h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.lh-h2--left {
+	text-align: left;
+}
+
+.lh-home-section img {
+	max-width: 100%;
+}
+
+/* Brand placeholder used when an image is not available yet. */
+.lh-ph {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background:
+		radial-gradient(circle at 78% 32%, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 36%),
+		repeating-linear-gradient(135deg, rgba(170, 121, 27, 0.05) 0 1px, transparent 1px 18px),
+		linear-gradient(115deg, var(--lh-bg-warm) 0%, #efe3cd 55%, var(--lh-accent) 100%);
+}
+
+.lh-ph--deep {
+	background:
+		radial-gradient(circle at 76% 34%, rgba(232, 211, 166, 0.26) 0, rgba(232, 211, 166, 0) 40%),
+		repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 18px),
+		linear-gradient(125deg, var(--lh-primary) 0%, #124238 60%, #1b5649 100%);
+}
+
+/* Carousel navigation shared by the section carousels (counter + chevrons). */
+.lh-home-section .lh-carousel__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+	margin-top: 30px;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+}
+
+/* WooCommerce loops used as carousel tracks: drop the float/clearfix grid. */
+.lh-home-section .lh-carousel ul.products {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lh-home-section .lh-carousel ul.products::before,
+.lh-home-section .lh-carousel ul.products::after {
+	content: none;
+	display: none;
+}
+
+.lh-home-section .lh-carousel ul.products li.product {
+	float: none;
+	clear: none;
+	width: auto;
+	margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+ * 1. Hero
+ * ----------------------------------------------------------------------- */
+.lh-hero {
+	position: relative;
+	overflow: hidden;
+	background: var(--lh-bg-alt);
+}
+
+.lh-hero .lh-carousel__viewport {
+	overflow: hidden;
+}
+
+/* Fade: every slide shares one grid cell; the active one is visible. */
+.lh-hero--slider .lh-carousel__track {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	transform: none;
+}
+
+.lh-hero--slider .lh-hero__slide {
+	grid-area: 1 / 1;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.8s ease, visibility 0s linear 0.8s;
+}
+
+.lh-hero--slider .lh-hero__slide.is-active {
+	z-index: 1;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.8s ease, visibility 0s;
+}
+
+.lh-hero__slide {
+	position: relative;
+	height: min(720px, 52vw);
+	min-height: 440px;
+}
+
+.lh-hero__media {
+	position: absolute;
+	inset: 0;
+}
+
+.lh-hero__media picture,
+.lh-hero__media img,
+.lh-hero__ph {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.lh-hero__media img {
+	object-fit: cover;
+	object-position: 70% center;
+}
+
+/* Soft scrim on the text side keeps copy readable on busy photos. */
+.lh-hero__media::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 55%);
+}
+
+.lh-hero__slide--light .lh-hero__media::after {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0) 60%);
+}
+
+.lh-hero__content {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.lh-hero__content > .lh-container {
+	width: 100%;
+}
+
+.lh-hero__text {
+	max-width: 660px;
+	padding-inline-start: 60px;
+}
+
+.lh-hero__slide--dark .lh-hero__text {
+	color: var(--lh-text);
+}
+
+.lh-hero__slide--light .lh-hero__text {
+	color: #fff;
+}
+
+.lh-hero__heading {
+	margin: 0 0 10px;
+	font-size: 40px;
+	line-height: 44px;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+.lh-hero__sub {
+	margin: 0 0 30px;
+	font-size: 18px;
+	line-height: 1.65;
+	color: inherit;
+}
+
+.lh-hero__btn {
+	margin: 0;
+}
+
+.lh-hero__arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.72);
+	color: var(--lh-text);
+	cursor: pointer;
+	transform: translateY(-50%);
+	transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.lh-hero__arrow:hover,
+.lh-hero__arrow:focus-visible {
+	background: #fff;
+}
+
+.lh-hero__arrow:focus-visible {
+	outline: 2px solid var(--lh-primary);
+	outline-offset: 2px;
+}
+
+.lh-hero__arrow--prev {
+	left: 32px;
+}
+
+.lh-hero__arrow--next {
+	right: 32px;
+}
+
+.lh-hero__dots {
+	position: absolute;
+	right: 0;
+	bottom: 24px;
+	left: 0;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	pointer-events: none;
+}
+
+.lh-hero__dots > * {
+	pointer-events: auto;
+}
+
+.lh-hero__dots button {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	padding: 0;
+	border: 1px solid var(--lh-text);
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+/* Bigger touch target without changing the visual size. */
+.lh-hero__dots button::after {
+	content: "";
+	position: absolute;
+	inset: -8px;
+}
+
+.lh-hero__dots button.is-active,
+.lh-hero__dots button[aria-current="true"],
+.lh-hero__dots button[aria-selected="true"] {
+	background: var(--lh-accent);
+}
+
+.lh-hero__dots button:focus-visible {
+	outline: 2px solid var(--lh-primary);
+	outline-offset: 3px;
+}
+
+@media (max-width: 1023px) {
+	.lh-hero__heading {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.lh-hero__sub {
+		font-size: 16px;
+	}
+
+	.lh-hero__text {
+		max-width: 520px;
+	}
+}
+
+@media (max-width: 767px) {
+	.lh-hero__slide {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		min-height: 0;
+	}
+
+	.lh-hero__media {
+		position: relative;
+		inset: auto;
+		aspect-ratio: 4 / 5;
+	}
+
+	.lh-hero__media img {
+		object-position: center;
+	}
+
+	.lh-hero__media::after {
+		display: none;
+	}
+
+	.lh-hero__content {
+		flex: 1 1 auto;
+		height: auto;
+		padding: 28px 0 30px;
+		background: var(--lh-bg-warm);
+	}
+
+	.lh-hero--slider .lh-hero__content {
+		padding-bottom: 64px;
+	}
+
+	.lh-hero__text,
+	.lh-hero__slide--light .lh-hero__text {
+		max-width: none;
+		padding: 0;
+		color: var(--lh-text);
+	}
+
+	.lh-hero__heading {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.lh-hero__sub {
+		margin-bottom: 22px;
+		font-size: 15px;
+	}
+
+	.lh-hero__slide--light .lh-hero__btn {
+		background: var(--lh-primary);
+		color: var(--lh-primary-contrast);
+	}
+
+	/* Arrows sit on the image (4:5 → its middle is at 62.5% of the width). */
+	.lh-hero__arrow {
+		top: 62.5vw;
+		width: 36px;
+		height: 36px;
+	}
+
+	.lh-hero__arrow--prev {
+		left: 12px;
+	}
+
+	.lh-hero__arrow--next {
+		right: 12px;
+	}
+
+	.lh-hero__dots {
+		bottom: 26px;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 2. USP bar
+ * ----------------------------------------------------------------------- */
+.lh-usps {
+	padding: 20px 0;
+	background: var(--lh-bg-alt);
+}
+
+.lh-usps__title {
+	display: none;
+}
+
+.lh-usps__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 14px 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lh-usps__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.35;
+}
+
+.lh-usps__icon {
+	flex: 0 0 auto;
+	color: var(--lh-primary);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.lh-usps__list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 16px 24px;
+	}
+}
+
+@media (max-width: 767px) {
+	.lh-usps {
+		padding: 40px 0 34px;
+	}
+
+	.lh-usps__title {
+		display: block;
+		margin: 0 0 22px;
+		text-align: center;
+	}
+
+	.lh-usps__list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 18px 16px;
+	}
+
+	.lh-usps__item {
+		align-items: flex-start;
+		font-size: 14px;
+	}
+
+	.lh-usps__icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 3. Collection intro + category tiles
+ * ----------------------------------------------------------------------- */
+.lh-intro__head {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.lh-intro__title {
+	padding-bottom: 15px;
+}
+
+.lh-intro__text > :last-child {
+	margin-bottom: 0;
+}
+
+.lh-cat-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--lh-grid-gap);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lh-cat-grid--4 {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.lh-cat-grid--2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lh-cat-grid--1 {
+	grid-template-columns: minmax(0, 480px);
+	justify-content: center;
+}
+
+.lh-cat-tile {
+	margin: 0;
+}
+
+.lh-cat-tile__link {
+	display: block;
+	height: 100%;
+	color: inherit;
+	text-decoration: none;
+}
+
+.lh-cat-tile__link:focus-visible {
+	outline: 2px solid var(--lh-primary);
+	outline-offset: 3px;
+}
+
+.lh-cat-tile__media {
+	position: relative;
+	display: block;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	background: var(--lh-bg-alt);
+}
+
+.lh-cat-tile__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.6s ease;
+}
+
+.lh-cat-tile__link:hover .lh-cat-tile__img,
+.lh-cat-tile__link:focus-visible .lh-cat-tile__img {
+	transform: scale(1.04);
+}
+
+.lh-cat-tile__ph {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--lh-muted);
+	background: linear-gradient(160deg, var(--lh-bg-alt) 0%, #e8eaef 100%);
+	opacity: 0.85;
+}
+
+.lh-cat-tile__label {
+	display: block;
+	padding: 15px;
+	background: var(--lh-bg-alt);
+	font-size: 14px;
+	line-height: 1.35;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: uppercase;
+	transition: color 0.2s ease;
+}
+
+.lh-cat-tile__link:hover .lh-cat-tile__label {
+	color: var(--lh-primary);
+	text-decoration: underline;
+	text-decoration-color: var(--lh-gold);
+	text-underline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+	.lh-intro__head {
+		margin-bottom: 24px;
+	}
+
+	.lh-cat-grid,
+	.lh-cat-grid--4 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 8px;
+	}
+
+	.lh-cat-grid--1 {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.lh-cat-tile__label {
+		padding: 12px 8px;
+		font-size: 12px;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 4. Styling inspiration reels
+ * ----------------------------------------------------------------------- */
+.lh-inspiration__head {
+	max-width: 980px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.lh-inspiration__head .lh-h2 {
+	padding-bottom: 12px;
+}
+
+.lh-inspiration__text {
+	margin: 0;
+}
+
+/* Room for the scaled centre card (the viewport clips vertically). */
+.lh-reels .lh-carousel__viewport {
+	padding-block: 30px;
+}
+
+.lh-reels .lh-carousel__nav {
+	margin-top: 0;
+}
+
+.lh-reel__card {
+	position: relative;
+	aspect-ratio: 9 / 16;
+	overflow: hidden;
+	border-radius: 6px;
+	background: var(--lh-bg-alt);
+	transform-origin: center;
+	transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+@media (min-width: 1024px) {
+	.lh-reel.is-center {
+		position: relative;
+		z-index: 1;
+	}
+
+	.lh-reel.is-center .lh-reel__card {
+		transform: scale(1.08);
+		box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+	}
+}
+
+.lh-reel__media {
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+
+.lh-reel__img,
+.lh-reel__video,
+.lh-reel__ph {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.lh-reel__img {
+	transition: transform 0.6s ease;
+}
+
+.lh-reel__card:hover .lh-reel__img {
+	transform: scale(1.03);
+}
+
+.lh-reel__play {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	transition: opacity 0.2s ease;
+}
+
+.lh-reel.is-playing .lh-reel__play {
+	opacity: 0;
+}
+
+.lh-reel__product {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px;
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+	color: var(--lh-text);
+	text-decoration: none;
+}
+
+.lh-reel__product:focus-visible {
+	outline: 2px solid var(--lh-primary);
+	outline-offset: 2px;
+}
+
+.lh-reel__thumb {
+	flex: 0 0 40px;
+	width: 40px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 2px;
+	background: var(--lh-bg-alt);
+}
+
+.lh-reel__thumb img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.lh-reel__info {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	min-width: 0;
+}
+
+.lh-reel__title {
+	display: -webkit-box;
+	overflow: hidden;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1.35;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.lh-reel__price {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.lh-reel__price del {
+	margin-right: 4px;
+	color: var(--lh-muted);
+	font-weight: 400;
+}
+
+.lh-reel__price ins {
+	text-decoration: none;
+}
+
+.lh-reel__product:hover .lh-reel__title {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.lh-inspiration__cta {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.lh-inspiration__cta .lh-btn {
+	gap: 10px;
+}
+
+@media (max-width: 767px) {
+	.lh-reels .lh-carousel__viewport {
+		padding-block: 20px;
+	}
+
+	.lh-reel__product {
+		right: 6px;
+		bottom: 6px;
+		left: 6px;
+		gap: 8px;
+		padding: 6px;
+	}
+
+	.lh-reel__thumb {
+		flex-basis: 32px;
+		width: 32px;
+		height: 40px;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 5. Trending products
+ * ----------------------------------------------------------------------- */
+.lh-home-section .lh-trending__title {
+	margin-bottom: 20px;
+}
+
+.lh-trending__cta {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+ * 6. Reviews
+ * ----------------------------------------------------------------------- */
+.lh-reviews {
+	text-align: center;
+}
+
+.lh-review {
+	margin: 0;
+}
+
+.lh-review__stars {
+	display: flex;
+	justify-content: center;
+	gap: 3px;
+	margin-bottom: 14px;
+	color: var(--lh-gold);
+}
+
+.lh-review__title {
+	padding-bottom: 12px;
+}
+
+.lh-review__title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.lh-review__title a:hover {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.lh-review__text {
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 26px;
+	quotes: none;
+}
+
+.lh-review__text p {
+	margin: 0;
+}
+
+.lh-review__author {
+	margin-top: 14px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+	.lh-review__text {
+		font-size: 15px;
+		line-height: 24px;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 7. Promo banner
+ * ----------------------------------------------------------------------- */
+.lh-promo__grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	align-items: stretch;
+}
+
+.lh-promo__panel {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 80px;
+	background: var(--lh-primary);
+	color: var(--lh-primary-contrast);
+	text-align: center;
+}
+
+/* The panel reaches 70px above and below the image, like a framed card. */
+.lh-promo--has-image .lh-promo__panel {
+	margin-block: -70px;
+}
+
+.lh-promo__logo {
+	display: block;
+	width: 190px;
+	height: auto;
+	margin: 0 auto 22px;
+}
+
+.lh-promo__title {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.3;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+.lh-promo__rule {
+	display: block;
+	width: 48px;
+	height: 1px;
+	margin: 22px auto;
+	background: var(--lh-gold);
+}
+
+.lh-promo__text {
+	max-width: 440px;
+	margin: 0 0 30px;
+	font-size: 13px;
+	line-height: 1.85;
+	opacity: 0.9;
+}
+
+.lh-promo__btn {
+	gap: 10px;
+}
+
+.lh-promo__media {
+	position: relative;
+	min-height: 460px;
+	overflow: hidden;
+	background: var(--lh-bg-warm);
+}
+
+.lh-promo__media img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 25%;
+}
+
+.lh-promo--no-image .lh-promo__grid {
+	grid-template-columns: minmax(0, 780px);
+	justify-content: center;
+}
+
+@media (max-width: 1023px) {
+	.lh-promo__panel {
+		padding: 44px 36px;
+	}
+
+	.lh-promo__title {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 767px) {
+	.lh-promo__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.lh-promo--has-image .lh-promo__panel {
+		margin-block: 0;
+	}
+
+	.lh-promo__panel {
+		padding: 44px 24px;
+	}
+
+	.lh-promo__title {
+		font-size: 22px;
+	}
+
+	.lh-promo__media {
+		min-height: 0;
+		aspect-ratio: 4 / 5;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 8. Image with text
+ * ----------------------------------------------------------------------- */
+.lh-about__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 533px) minmax(0, 1fr);
+	gap: 80px;
+	align-items: center;
+	padding-inline: clamp(0px, 7.5vw, 108px);
+}
+
+.lh-about--image-right .lh-about__media {
+	order: 2;
+}
+
+.lh-about__media {
+	position: relative;
+	aspect-ratio: 4 / 5;
+	overflow: hidden;
+	background: var(--lh-bg-alt);
+}
+
+.lh-about__media img,
+.lh-about__ph {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.lh-about__body {
+	max-width: 520px;
+}
+
+.lh-about__title {
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+.lh-about__text > :last-child {
+	margin-bottom: 0;
+}
+
+.lh-about__btn {
+	margin-top: 25px;
+}
+
+@media (max-width: 1023px) {
+	.lh-about__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 40px;
+		padding-inline: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.lh-about__grid {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 28px;
+	}
+
+	.lh-about--image-right .lh-about__media {
+		order: 0;
+	}
+
+	.lh-about__body {
+		max-width: none;
+	}
+}
+
+/* --------------------------------------------------------------------------
+ * 9. Read-more text
+ * ----------------------------------------------------------------------- */
+.lh-seo__title {
+	padding-bottom: 15px;
+}
+
+.lh-seo .lh-readmore__toggle {
+	margin-top: 4px;
+	padding: 4px 0;
+	border: 0;
+	background: none;
+	color: var(--lh-text);
+	font: inherit;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.lh-seo .lh-readmore__toggle:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+ * 10. Rich text
+ * ----------------------------------------------------------------------- */
+.lh-richtext__title {
+	padding-bottom: 15px;
+}
+
+.lh-richtext--center {
+	text-align: center;
+}
+
+.lh-richtext__body > :last-child {
+	margin-bottom: 0;
+}
+
+/* Lists like the reference: bullets aligned with the text column. */
+.lh-richtext__body ul {
+	padding-left: 15px;
+}
+
+/* --------------------------------------------------------------------------
+ * 11. FAQ
+ * ----------------------------------------------------------------------- */
+.lh-faq__title {
+	padding-bottom: 25px;
+}
+
+.lh-faq__list {
+	border-top: 1px solid var(--lh-border);
+}
+
+.lh-faq__item .lh-accordion__body p {
+	margin: 0 0 15px;
+}
+
+/* --------------------------------------------------------------------------
+ * Front page content (when typed into the static front page).
+ * ----------------------------------------------------------------------- */
+.lh-home-content .entry-content > :last-child {
+	margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.lh-hero--slider .lh-hero__slide,
+	.lh-hero--slider .lh-hero__slide.is-active,
+	.lh-cat-tile__img,
+	.lh-reel__card,
+	.lh-reel__img {
+		transition: none;
+	}
+
+	.lh-cat-tile__link:hover .lh-cat-tile__img,
+	.lh-reel__card:hover .lh-reel__img {
+		transform: none;
+	}
+}

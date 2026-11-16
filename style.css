@@ -1,0 +1,21 @@
+/*
+Theme Name: Lihan
+Theme URI: https://lihanbd.com/
+Author: Lihan Lifestyle
+Author URI: https://lihanbd.com/
+Description: A clean, fast modest-fashion store theme for Lihan Lifestyle. Built for WooCommerce (product cards, cart drawer, sticky buy box, styled cart and checkout blocks), fully compatible with Elementor (header/footer locations, custom section widgets, full-width templates) and CartFlows (default and canvas step templates, token-styled checkout). Vanilla JavaScript, inline SVG icons, accessible markup and customizer-driven colours.
+Version: 1.0.0
+Requires at least: 6.5
+Tested up to: 7.1
+Requires PHP: 8.1
+WC requires at least: 8.0
+WC tested up to: 11.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lihan
+Update URI: https://github.com/sogir/lihan_theme
+Domain Path: /languages
+Tags: e-commerce, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, theme-options, full-width-template, block-styles, wide-blocks, accessibility-ready
+*/
+
+/* All theme styles live in assets/css/main.css (enqueued as "lihan-main"). */

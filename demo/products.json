@@ -1,0 +1,817 @@
+{
+    "version": 1,
+    "source": "https://www.lihanbd.com/ (scraped 2026-11-10)",
+    "attributes": {
+        "size": {
+            "name": "Size",
+            "terms": [
+                {
+                    "name": "50"
+                },
+                {
+                    "name": "52"
+                },
+                {
+                    "name": "54"
+                },
+                {
+                    "name": "56"
+                },
+                {
+                    "name": "58"
+                }
+            ]
+        },
+        "color": {
+            "name": "Color",
+            "terms": [
+                {
+                    "name": "Black",
+                    "hex": "#111111"
+                },
+                {
+                    "name": "White",
+                    "hex": "#f4f2ee"
+                },
+                {
+                    "name": "Brown",
+                    "hex": "#6b4a2f"
+                },
+                {
+                    "name": "Mustard",
+                    "hex": "#d4a23c"
+                },
+                {
+                    "name": "Mauve",
+                    "hex": "#9c7b8f"
+                },
+                {
+                    "name": "Lavender",
+                    "hex": "#b9a7d6"
+                },
+                {
+                    "name": "Mint",
+                    "hex": "#b8d4c6"
+                }
+            ]
+        }
+    },
+    "categories": [
+        {
+            "slug": "abaya-set",
+            "name": "Abaya Set",
+            "description": "Complete abaya and borka sets with matching hijab and niqab, cut from premium Cherry and Dubai Cherry fabrics.",
+            "image": "categories/abaya-set.jpg",
+            "menu_order": 0
+        },
+        {
+            "slug": "hijab",
+            "name": "Hijab",
+            "description": "Long khimars, ready hijabs and prayer sets in breathable fabrics for every day.",
+            "image": "categories/hijab.jpg",
+            "menu_order": 1
+        },
+        {
+            "slug": "niqab",
+            "name": "Niqab",
+            "description": "Light chiffon and georgette niqabs designed for comfort and full coverage.",
+            "image": "categories/niqab.jpg",
+            "menu_order": 2
+        },
+        {
+            "slug": "niqab-combo",
+            "name": "Niqab Combo",
+            "description": "Hijab and niqab combinations that go on in one easy step.",
+            "image": "categories/niqab-combo.jpg",
+            "menu_order": 3
+        },
+        {
+            "slug": "inner-cap",
+            "name": "Inner Cap",
+            "description": "Soft stretch inner caps that keep your hijab in place all day.",
+            "image": "categories/inner-cap.jpg",
+            "menu_order": 4
+        },
+        {
+            "slug": "hat-moja",
+            "name": "Hat Moja",
+            "description": "Hand socks (hat moja) to complete your modest look, including touch-screen styles.",
+            "image": "categories/hat-moja.jpg",
+            "menu_order": 5
+        }
+    ],
+    "products": [
+        {
+            "sku": "LH-P0263",
+            "slug": "muntaha-set",
+            "name": "Muntaha Set",
+            "name_bn": "মুনতাহা সেট",
+            "category": "abaya-set",
+            "type": "variable",
+            "regular_price": 3200,
+            "sale_price": null,
+            "featured": true,
+            "tags": [
+                "inspiration"
+            ],
+            "attributes": {
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Cherry",
+            "out_of_stock": {
+                "size": "50"
+            },
+            "short_description": "A two-layer part-system abaya with statement sleeves, a long Cherry hijab and a front double-niqab system you can adjust for extra coverage.",
+            "description": "<p>পূর্ণ পর্দার সৌন্দর্য, লেয়ার্ড ডিজাইন ও নিখুঁত ফিনিশিং—সবকিছু একসাথে।</p>\n<p>মুনতাহা সেট একটি ২ লেয়ার পার্ট সিস্টেম আবায়া সেট, যা খাস পর্দার পাশাপাশি একটি সুন্দর ও এলিগ্যান্ট লুক তৈরি করে। আবায়ার হাতার আকর্ষণীয় ডিজাইনের সাথে থাকছে লং Cherry Hijab এবং সামনের দিকে দুটি আলাদা নিকাব পার্ট—যা প্রয়োজন অনুযায়ী পর্দার কাভারেজ বাড়ানোর সুবিধা দেয়।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>2-Layer Part System Abaya</strong></p>\n<p>সুন্দর লেয়ার্ড ডিজাইনের ২ পার্ট সিস্টেম আবায়া। আবায়ার হাতায় রয়েছে বিশেষ সুন্দর ডিজাইন, যা পুরো পোশাকের সাধারণ লুকের মধ্যে একটি আলাদা সৌন্দর্য যোগ করে।</p>\n<p><strong>Long Cherry Hijab</strong></p>\n<p>সেটের সাথে থাকছে লং Cherry Fabric Hijab, যা আবায়ার সাথে সুন্দরভাবে মানিয়ে একটি পরিপূর্ণ হিজাবি লুক তৈরি করে।</p>\n<p><strong>Front Double Niqab System</strong></p>\n<p>হিজাবের সামনের অংশে রয়েছে দুটি আলাদা নিকাব পার্ট। প্রয়োজন ও পছন্দ অনুযায়ী এগুলো ব্যবহার করে পর্দার কাভারেজ নিজের মতো করে নেওয়া যায়।</p>\n<h4>Product Highlights</h4>\n<ul><li>2-Layer Part System Abaya</li><li>Elegant Layered Design</li><li>হাতায় আকর্ষণীয় ডিজাইন</li><li>Long Cherry Hijab</li><li>হিজাবের সামনে ২টি আলাদা Niqab Part</li><li>পরিপূর্ণ পর্দার জন্য উপযোগী</li><li>Elegant &amp; Modest Look</li><li>Color - Only Black</li></ul>",
+            "images": [
+                "products/muntaha-set-1.jpg",
+                "products/muntaha-set-2.jpg",
+                "products/muntaha-set-3.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 0,
+            "source_url": "https://www.lihanbd.com/product/263"
+        },
+        {
+            "sku": "LH-P0262",
+            "slug": "muhajir-set",
+            "name": "Muhajir Set",
+            "name_bn": "মুহাজির সেট",
+            "category": "abaya-set",
+            "type": "variable",
+            "regular_price": 3000,
+            "sale_price": null,
+            "featured": true,
+            "tags": [
+                "inspiration"
+            ],
+            "attributes": {
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Dubai Cherry",
+            "out_of_stock": [],
+            "short_description": "Long kaftan-style borka in original Dubai Cherry with an instant ready hijab and attached niqab, for full coverage in seconds.",
+            "description": "<p>চোখ ঢেকে পরিপূর্ণ পর্দা—সাথে থাকুক মার্জিত ও ইউনিক ডিজাইনের সৌন্দর্য।</p>\n<p>যারা খাস পর্দার জন্য বোরকা ও হিজাব খুঁজছেন, তাদের জন্য মুহাজির সেট হতে পারে একটি চমৎকার পছন্দ। লং কাপ্তান ডিজাইনের বোরকা এবং Attached Niqab-সহ Instant Ready Hijab-এর সমন্বয়ে তৈরি এই সেটটি সম্পূর্ণ পর্দাশীল ও পরিপাটি লুকের জন্য বিশেষভাবে উপযোগী।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Long Kaftan Design Borka</strong></p>\n<p>অরিজিনাল Dubai Cherry Fabric দিয়ে তৈরি লং কাপ্তান ডিজাইনের বোরকা। এর সুন্দর ফ্লোইং ডিজাইন ও মার্জিত কাটিং পুরো পোশাকে এনে দেয় একটি graceful look।</p>\n<p><strong>Instant Ready Hijab + Attached Niqab</strong></p>\n<p>বোরকার সাথে থাকছে Original Dubai Cherry Fabric-এর Instant Ready Hijab, যার সাথে নিকাব আগে থেকেই এটাচ করা রয়েছে। ফলে আলাদাভাবে নিকাব ব্যবহার করার প্রয়োজন নেই এবং সহজেই চোখ ঢেকে পরিপূর্ণ পর্দার লুক তৈরি করা যায়।</p>\n<h4>Product Highlights</h4>\n<ul><li>Original Dubai Cherry Fabric</li><li>Long Kaftan Design Borka</li><li>Instant Ready Hijab</li><li>Hijab-এর সাথে Attached Niqab</li><li>চোখ ঢেকে পরিপূর্ণ পর্দার সুবিধা</li><li>Premium quality fabric &amp; stitching</li><li>Body Free Size</li><li>Full Set অথবা আলাদা পার্ট নেওয়ার সুবিধা</li></ul>",
+            "images": [
+                "products/muhajir-set-1.jpg",
+                "products/muhajir-set-2.jpg",
+                "products/muhajir-set-3.jpg"
+            ],
+            "reviews": [
+                {
+                    "author": "Tasnim Hossain",
+                    "rating": 5,
+                    "content": "The instant hijab is a blessing on busy mornings. Fabric quality is excellent for the price."
+                },
+                {
+                    "author": "Rumana Islam",
+                    "rating": 5,
+                    "content": "Ordered to Chattogram, arrived in three days and well packed. My mother loved it too."
+                }
+            ],
+            "menu_order": 1,
+            "source_url": "https://www.lihanbd.com/product/262"
+        },
+        {
+            "sku": "LH-P0255",
+            "slug": "hiba-set",
+            "name": "Hiba Set",
+            "name_bn": "হিবা সেট",
+            "category": "abaya-set",
+            "type": "variable",
+            "regular_price": 3000,
+            "sale_price": 2700,
+            "featured": true,
+            "tags": [],
+            "attributes": {
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Cherry",
+            "out_of_stock": {
+                "size": "58"
+            },
+            "short_description": "Lightweight inner borka with an Egyptian hijab and attached hoodie niqab. Breathable 100% original Cherry, a summer favourite with students.",
+            "description": "<p>গরমের দিনে আরাম, পর্দায় পূর্ণতা—আর সবকিছুর সাথে থাকছে বাজেট-ফ্রেন্ডলি একটি সুন্দর ডিজাইন।</p>\n<p>হিবা সেট বিশেষভাবে তৈরি করা হয়েছে স্টুডেন্ট আপুদের কথা মাথায় রেখে। হালকা ও আরামদায়ক গঠনের কারণে গরমের সময় নিয়মিত ব্যবহারের জন্য এটি হতে পারে একটি practical choice। পরিপূর্ণ পর্দার সাথে ইউনিক ও মার্জিত ডিজাইন সেটটিকে দিয়েছে আলাদা আকর্ষণ।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Lightweight Inner Borka</strong></p>\n<p>সেটের সাথে থাকছে একটি হালকা ও আরামদায়ক Inner Borka। গরমের সময় সহজে পরিধান করার উপযোগী করে তৈরি করা হয়েছে, যাতে দীর্ঘসময় পরেও অস্বস্তি কম থাকে।</p>\n<p><strong>Egyptian Hijab + Attached Hoodie Niqab</strong></p>\n<p>হিজাবের সাথে থাকছে Hoodie Niqab, যা Egyptian Hijab-এর সাথে সুন্দরভাবে এটাচ করা। ফলে আলাদাভাবে নিকাব ব্যবহারের প্রয়োজন ছাড়াই সম্পূর্ণ পর্দাশীল লুক তৈরি করা যায়।</p>\n<h4>Fabric &amp; Quality</h4>\n<ul><li>Fabric: 100% Original Cherry</li></ul>\n<p>অরিজিনাল Cherry Fabric-এর মান নিশ্চিত করার প্রতি বিশেষ গুরুত্ব দেওয়া হয়েছে। কাপড়ের মান প্রত্যাশা অনুযায়ী না হলে দেখে পছন্দ না হলে ফেরত দেওয়ার সুবিধা রয়েছে।</p>\n<p>আমাদের প্রতিটি পণ্য নিজস্ব কারখানায় দক্ষ কারিগরদের মাধ্যমে মানসম্মত কাপড় ও ফিনিশিং বজায় রেখে তৈরি করা হয়।</p>\n<h4>কেন হিবা সেট?</h4>\n<ul><li>Student-friendly budget</li><li>Summer-friendly lightweight design</li><li>100% Original Cherry Fabric</li><li>ইউনিক ও মার্জিত ডিজাইন</li><li>Lightweight Inner Borka</li><li>Egyptian Hijab</li><li>Attached Hoodie Niqab</li><li>পরিপূর্ণ পর্দার জন্য উপযোগী</li><li>Full Set অথবা আলাদা পার্ট নেওয়ার সুবিধা</li></ul>",
+            "images": [
+                "products/hiba-set-1.jpg",
+                "products/hiba-set-2.jpg",
+                "products/hiba-set-3.jpg"
+            ],
+            "reviews": [
+                {
+                    "author": "Nusrat Jahan",
+                    "rating": 5,
+                    "content": "Very light and comfortable even in this heat. The attached niqab sits nicely. Delivery to Mirpur took one day."
+                },
+                {
+                    "author": "Sumaiya Akter",
+                    "rating": 5,
+                    "content": "Bought it for university. The Cherry fabric is soft and the stitching is neat. Size 54 fits perfectly."
+                },
+                {
+                    "author": "Farzana Rahman",
+                    "rating": 5,
+                    "content": "Exactly like the photos. Paid cash on delivery, no hassle at all."
+                }
+            ],
+            "menu_order": 2,
+            "source_url": "https://www.lihanbd.com/product/255"
+        },
+        {
+            "sku": "LH-P0253",
+            "slug": "azma-set",
+            "name": "Azma Set",
+            "name_bn": "আজমা সেট",
+            "category": "abaya-set",
+            "type": "variable",
+            "regular_price": 3500,
+            "sale_price": null,
+            "featured": true,
+            "tags": [],
+            "attributes": {
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Dubai Cherry",
+            "out_of_stock": [],
+            "short_description": "Premium Dubai Cherry borka paired with a long orna hoodie cap-system hijab: an elegant, complete set for everyday and occasions.",
+            "description": "<p>সাদামাটা নয়, পর্দাশীলতায় থাকুক সৌন্দর্য ও আভিজাত্যের ছোঁয়া।</p>\n<p>আজমা সেট তৈরি করা হয়েছে প্রিমিয়াম Dubai Cherry Fabric দিয়ে, যেখানে বোরকার সাথে থাকছে লং ওড়না হুডি ক্যাপ সিস্টেম হিজাব। যারা সম্পূর্ণ পর্দাশীল ও পরিপাটি লুক পছন্দ করেন, তাদের জন্য এটি হতে পারে একটি সুন্দর কমপ্লিট সেট।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Premium Dubai Cherry Borka</strong></p>\n<p>প্রিমিয়াম Dubai Cherry কাপড়ের তৈরি সুন্দর ও আরামদায়ক বোরকা। মার্জিত ডিজাইন ও পরিপাটি ফিনিশিংয়ের কারণে দৈনন্দিন ব্যবহার থেকে শুরু করে বিভিন্ন আয়োজনেও মানানসই।</p>\n<p><strong>Long Orna Hoodie Cap System Hijab</strong></p>\n<p>বোরকার সাথে থাকছে Dubai Cherry কাপড়ের লং ওড়না হুডি ক্যাপ সিস্টেম হিজাব। এর সুন্দর কাভারেজ পুরো লুকটিকে আরও পরিপূর্ণ ও এলিগ্যান্ট করে তোলে।</p>\n<h4>Product Features</h4>\n<ul><li>Premium Dubai Cherry Fabric</li><li>Comfortable &amp; elegant fabric</li><li>সুন্দর ও মার্জিত বোরকা ডিজাইন</li><li>Long Orna Hoodie Cap System Hijab</li><li>পরিপাটি ও পর্দাশীল লুক</li><li>Full Set Available</li></ul>",
+            "images": [
+                "products/azma-set-1.jpg",
+                "products/azma-set-2.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 3,
+            "source_url": "https://www.lihanbd.com/product/253"
+        },
+        {
+            "sku": "LH-P0265",
+            "slug": "rabea-set",
+            "name": "Rabea Set",
+            "name_bn": "রাবেয়া সেট",
+            "category": "abaya-set",
+            "type": "variable",
+            "regular_price": 3200,
+            "sale_price": null,
+            "featured": false,
+            "tags": [
+                "inspiration"
+            ],
+            "attributes": {
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Dubai Cherry",
+            "out_of_stock": [],
+            "short_description": "Double-part kuchi borka in Dubai Cherry with a Farfalla long hijab and double-part niqab for a graceful, layered full-coverage look.",
+            "description": "<p>পর্দাশীলতার সাথে থাকুক সৌন্দর্য, আর প্রতিটি লেয়ারে ফুটে উঠুক আভিজাত্য।</p>\n<p>রাবেয়া সেট একটি সুন্দর ও মার্জিত Full Coverage Abaya Set, যেখানে প্রিমিয়াম Dubai Cherry Fabric-এর Double Part Kuchi Borka-এর সাথে থাকছে Farfalla Long Hijab এবং Double Part Niqab। পুরো সেটটি একসাথে একটি পরিপূর্ণ, elegant ও পর্দাশীল লুক তৈরি করে।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Premium Double Part Kuchi Borka</strong></p>\n<p>প্রিমিয়াম Dubai Cherry Fabric দিয়ে তৈরি Double Part Kuchi Borka। কুচি ডিজাইনের সুন্দর লেয়ার ও পরিপাটি ফিনিশিং বোরকাটিকে দিয়েছে একটি আকর্ষণীয় ও graceful look।</p>\n<p><strong>Farfalla Long Hijab</strong></p>\n<p>সেটের সাথে থাকছে একটি সুন্দর Farfalla Long Hijab, যা বোরকার সাথে মানানসইভাবে সম্পূর্ণ লুককে আরও elegant করে তোলে।</p>\n<p><strong>Double Part Niqab</strong></p>\n<p>সেটটি সম্পূর্ণ পর্দাশীল করার জন্য থাকছে Double Part Niqab, যা হিজাবের সাথে একটি সুন্দর full-coverage look তৈরি করে।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Dubai Cherry Fabric</li><li>Double Part Kuchi Borka</li><li>Elegant Kuchi Design</li><li>Farfalla Long Hijab</li><li>Double Part Niqab</li><li>পরিপাটি ও মার্জিত ফিনিশিং</li><li>Full Set Available</li><li>পর্দাশীল ও Elegant Look</li><li>color - Only Black</li></ul>",
+            "images": [
+                "products/rabea-set-1.jpg",
+                "products/rabea-set-2.jpg",
+                "products/rabea-set-3.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 4,
+            "source_url": "https://www.lihanbd.com/product/265"
+        },
+        {
+            "sku": "LH-P0261",
+            "slug": "mubashshira-set",
+            "name": "Mubashshira Set",
+            "name_bn": "মুবাশশিরা সেট",
+            "category": "abaya-set",
+            "type": "variable",
+            "regular_price": 2800,
+            "sale_price": 2300,
+            "featured": false,
+            "tags": [],
+            "attributes": {
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Cherry",
+            "out_of_stock": [],
+            "short_description": "Kuchi-design Cherry borka with a new readymade hijab and a nose niqab: neat stitching and an easy, complete look.",
+            "description": "<p>খাস পর্দার জন্য পরিপূর্ণ, মার্জিত ও সুন্দর একটি কমপ্লিট সেট।</p>\n<p>যারা বোরকা ও হিজাবের মাধ্যমে পরিপূর্ণ পর্দার সাথে সুন্দর ও পরিপাটি লুক চান, তাদের জন্য মুবাশশিরা সেট হতে পারে একটি চমৎকার পছন্দ। প্রিমিয়াম মানের কাপড়, সুন্দর ডিজাইন এবং নিখুঁত সেলাই ফিনিশিং—সবকিছুর সমন্বয়ে তৈরি এই সেটটি।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Premium Cherry Kuchi Borka</strong></p>\n<p>প্রিমিয়াম Cherry Fabric দিয়ে তৈরি সুন্দর কুচি ডিজাইনের বোরকা। মার্জিত ডিজাইনের সাথে মানসম্মত ফ্যাব্রিক ও পরিপাটি সেলাই ফিনিশিং বোরকাটিকে দিয়েছে একটি সুন্দর ও elegant look।</p>\n<p><strong>Readymade Hijab</strong></p>\n<p>সেটের সাথে থাকছে Cherry Fabric-এর একদম নতুন ডিজাইনের Readymade Hijab। রেডিমেড সিস্টেম হওয়ায় সহজেই পরিধান করে দ্রুত একটি পরিপূর্ণ হিজাবি লুক তৈরি করা যায়।</p>\n<p><strong>Nose Niqab</strong></p>\n<p>সেটটি সম্পূর্ণ করতে সাথে থাকছে একটি Nose Niqab, যা পর্দাশীল লুককে আরও সুন্দরভাবে সম্পন্ন করে।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Cherry Fabric</li><li>Elegant Kuchi Design Borka</li><li>নতুন ডিজাইনের Readymade Hijab</li><li>সাথে Nose Niqab</li><li>মানসম্মত কাপড় ও সেলাই ফিনিশিং</li><li>খাস পর্দার জন্য উপযোগী</li><li>Full Set Available</li></ul>",
+            "images": [
+                "products/mubashshira-set-1.jpg",
+                "products/mubashshira-set-2.jpg",
+                "products/mubashshira-set-3.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 5,
+            "source_url": "https://www.lihanbd.com/product/261"
+        },
+        {
+            "sku": "LH-P0266",
+            "slug": "ruhana-set",
+            "name": "Ruhana Set",
+            "name_bn": "রুহানা সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 3000,
+            "sale_price": null,
+            "featured": true,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Dubai Cherry",
+            "out_of_stock": [],
+            "short_description": "A three-piece outfit: designer two-layer top, matching long skirt and an instant ready hoodie hijab with attached niqab, all in Dubai Cherry.",
+            "description": "<p>একদম নতুন ডিজাইনে পরিপূর্ণ পর্দা—সাথে থাকুক আধুনিকতা, সৌন্দর্য ও আরামের নিখুঁত সমন্বয়।</p>\n<p>রুহানা সেট একটি ব্যতিক্রমী Three-Piece Modest Outfit, যেখানে রয়েছে Designer Two-Layer Top, Matching Skirt এবং Attached Niqab-সহ Instant Ready Hoodie Hijab। সম্পূর্ণ সেটটি তৈরি করা হয়েছে Original Dubai Cherry Fabric দিয়ে, সঙ্গে রয়েছে মানসম্মত সেলাই ও ফিনিশিং।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Designer Two-Layer Top</strong></p>\n<p>সেটের অন্যতম আকর্ষণ হলো সুন্দর Designer Two-Layer Top। এর লেয়ার্ড ডিজাইন পুরো পোশাকে এনে দেয় একটি graceful ও sophisticated look।</p>\n<p><strong>Matching Skirt</strong></p>\n<p>টপের সাথে থাকছে একটি matching Long Skirt, যা পুরো outfit-কে করে তোলে পরিপাটি ও সম্পূর্ণ।</p>\n<p><strong>Instant Ready Hoodie Hijab + Attached Niqab</strong></p>\n<p>সেটের সাথে থাকছে Instant Ready Hoodie Hijab, যার সাথে নিকাব আগে থেকেই attached করা রয়েছে। ফলে আলাদাভাবে নিকাব ব্যবহারের প্রয়োজন নেই—সহজেই তৈরি করা যায় সম্পূর্ণ পর্দাশীল লুক।</p>\n<h4>Fabric &amp; Quality</h4>\n<ul><li>Fabric: Original Dubai Cherry</li></ul>\n<p>রুহানা সেট তৈরি করা হয়েছে অরিজিনাল Dubai Cherry কাপড় দিয়ে। কাপড়ের মানের পাশাপাশি সেলাই ও ফিনিশিংয়ের দিকেও বিশেষ গুরুত্ব দেওয়া হয়েছে, যাতে পুরো পোশাকটি হয় সুন্দর ও পরিপাটি।</p>\n<h4>Product Highlights</h4>\n<ul><li>Original Dubai Cherry Fabric</li><li>Unique Designer Two-Layer Top</li><li>Matching Skirt</li><li>Instant Ready Hoodie Hijab</li><li>Hijab-এর সাথে Attached Niqab</li><li>আলাদা নিকাব ব্যবহারের প্রয়োজন নেই</li><li>Premium Stitching &amp; Finishing</li><li>পরিপূর্ণ পর্দাশীল ও Elegant Design</li><li>Body Free Size</li><li>color - Only Black</li></ul>",
+            "images": [
+                "products/ruhana-set-1.jpg",
+                "products/ruhana-set-2.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 6,
+            "source_url": "https://www.lihanbd.com/product/266"
+        },
+        {
+            "sku": "LH-P0256",
+            "slug": "hoodie-jilbab-set",
+            "name": "Hoodie Jilbab Set",
+            "name_bn": "হুডি জিলবাব সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 3400,
+            "sale_price": null,
+            "featured": true,
+            "tags": [
+                "inspiration"
+            ],
+            "attributes": [],
+            "fabric": "",
+            "out_of_stock": [],
+            "short_description": "Two-part borka, two-part long jilbab (wear it with eyes open or covered) and a separate two-part nose niqab: one versatile set.",
+            "description": "<p>পূর্ণ পর্দা, বহুমুখী ব্যবহার এবং আধুনিক এলিগ্যান্ট ডিজাইনের এক সুন্দর সমন্বয়।</p>\n<p>Lihan-এর বিশেষ আয়োজন Hoodie Jilbab Set—যাদের পছন্দ সম্পূর্ণ হিজাবি লুকের সাথে মার্জিত ও ইউনিক ডিজাইন। এই সেটে রয়েছে ২ পার্টের বোরকা, ২ পার্টের লং জিলবাব এবং আলাদা ২ পার্টের নোজ নিকাব—যা একসাথে তৈরি করে একটি সম্পূর্ণ পর্দাশীল লুক।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>2-Part Borka</strong></p>\n<p>সেটের সাথে থাকছে ২ পার্টের সুন্দর ও পরিপাটি বোরকা। এর মার্জিত ডিজাইন পুরো সেটের লুককে করে তোলে আরও পরিপূর্ণ।</p>\n<p><strong>2-Part Long Jilbab</strong></p>\n<p>এই সেটের অন্যতম বিশেষ আকর্ষণ হলো ২ পার্টের লং জিলবাব। জিলবাবটি এমনভাবে ডিজাইন করা হয়েছে যাতে চোখ খোলা রেখেও এবং চোখ ঢেকেও—দুইভাবেই পরা যায়। প্রয়োজন ও পছন্দ অনুযায়ী ব্যবহারের এই সুবিধা সেটটিকে আরও versatile করে তুলেছে।</p>\n<p><strong>Separate 2-Part Nose Niqab</strong></p>\n<p>জিলবাবের সাথে থাকছে আলাদা ২ পার্টের নোজ নিকাব, যা সম্পূর্ণ পর্দাশীল লুককে আরও সুন্দরভাবে সম্পন্ন করে।</p>\n<h4>Product Highlights</h4>\n<ul><li>২ পার্টের বোরকা</li><li>২ পার্টের লং জিলবাব</li><li>চোখ খোলা ও ঢেকে—দুইভাবেই পরার সুবিধা</li><li>আলাদা ২ পার্টের নোজ নিকাব</li><li>সম্পূর্ণ হিজাবি ও পর্দাশীল ডিজাইন</li><li>Elegant &amp; Unique Look</li><li>Full Set Available</li></ul>",
+            "images": [
+                "products/hoodie-jilbab-set-1.jpg",
+                "products/hoodie-jilbab-set-2.jpg",
+                "products/hoodie-jilbab-set-3.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 7,
+            "source_url": "https://www.lihanbd.com/product/256"
+        },
+        {
+            "sku": "LH-P0250",
+            "slug": "ayesha-set",
+            "name": "Ayesha Set",
+            "name_bn": "আয়েশা সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 2800,
+            "sale_price": null,
+            "featured": false,
+            "tags": [
+                "inspiration"
+            ],
+            "attributes": [],
+            "fabric": "Imported Cherry",
+            "out_of_stock": [],
+            "short_description": "Double-part borka in imported premium Cherry with an orna hijab and a long hoodie hijab with attached double-part niqab.",
+            "description": "<p>একটি সম্পূর্ণ পর্দাশীল ও এলিগ্যান্ট লুকের জন্য প্রিমিয়াম কোয়ালিটির Ayesha Set।</p>\n<p>ইমপোর্টেড প্রিমিয়াম চেরি কাপড়ের আরামদায়ক ও সুন্দর ফিনিশিংয়ের সাথে এই সেটে থাকছে বোরকা, ওরনা হিজাব এবং লং হুডি হিজাবসহ ডাবল পার্ট নিকাব—অর্থাৎ আপনার প্রয়োজনীয় সম্পূর্ণ সেট একসাথেই।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Double Part Borka</strong></p>\n<p>ইমপোর্টেড প্রিমিয়াম চেরি কাপড় দিয়ে তৈরি ডাবল পার্ট বোরকা। আরামদায়ক ফ্যাব্রিক ও মার্জিত ডিজাইন দৈনন্দিন ব্যবহার কিংবা বিশেষ অনুষ্ঠানের জন্য উপযোগী।</p>\n<p><strong>Premium Cherry Orna Hijab</strong></p>\n<p>বোরকার সাথে থাকছে প্রিমিয়াম চেরি কাপড়ের সুন্দর ও পরিপাটি ওরনা হিজাব, যা সম্পূর্ণ লুকটিকে আরও আকর্ষণীয় করে তুলবে।</p>\n<p><strong>Long Hoodie Hijab + Attached Double Part Niqab</strong></p>\n<p>সেটটির বিশেষ আকর্ষণ হিসেবে থাকছে লং হুডি হিজাব, যার সাথে রয়েছে এটাচড ডাবল পার্ট নিকাব। এটি পর্দাশীলতা ও স্টাইল—দুটিই সুন্দরভাবে বজায় রাখে।</p>\n<h4>Product Features</h4>\n<ul><li>ইমপোর্টেড প্রিমিয়াম চেরি ফ্যাব্রিক</li><li>ডাবল পার্ট বোরকা</li><li>প্রিমিয়াম চেরি ওরনা হিজাব</li><li>লং হুডি হিজাব</li><li>এটাচড ডাবল পার্ট নিকাব</li><li>পরিপাটি ও মার্জিত ফিনিশিং</li><li>সম্পূর্ণ Full Set Available</li></ul>",
+            "images": [
+                "products/ayesha-set-1.jpg",
+                "products/ayesha-set-2.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 8,
+            "source_url": "https://www.lihanbd.com/product/250"
+        },
+        {
+            "sku": "LH-P0251",
+            "slug": "one-part-hoodie-jilbab-set",
+            "name": "One Part Hoodie Jilbab Set",
+            "name_bn": "ওয়ান পার্ট হুডি জিলবাব সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 3200,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Cherry",
+            "out_of_stock": [],
+            "short_description": "Simple one-part hoodie jilbab with a generous long gher and a long Cherry hijab. Body free size.",
+            "description": "<p>পূর্ণ পর্দার জন্য একদম মার্জিত ডিজাইন—সাথে থাকুক লং ঘের, আরাম ও graceful look।</p>\n<p>যারা খাস পর্দার জন্য একটি সিম্পল কিন্তু আকর্ষণীয় Jilbab Set খুঁজছেন, তাদের জন্য One Part Hoodie Jilbab Set হতে পারে দারুণ একটি পছন্দ। Premium Cherry Fabric-এর Abaya এবং Long Cherry Hijab-এর সমন্বয়ে তৈরি এই সেটটি পর্দাশীলতার পাশাপাশি দেয় সুন্দর ও পরিপাটি একটি লুক।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Premium Cherry Abaya</strong></p>\n<p>প্রিমিয়াম মানের Cherry Fabric দিয়ে তৈরি One Part Abaya। আবায়াটিতে রয়েছে Long Gher, যা চলাফেরার সময় সুন্দর flow ও graceful appearance তৈরি করে।</p>\n<ul><li>Body: Free Size</li></ul>\n<p><strong>Long Cherry Hijab</strong></p>\n<p>সেটের সাথে থাকছে প্রিমিয়াম Cherry Fabric-এর Long Hijab, যা পুরো লুককে আরও পরিপূর্ণ ও পর্দাশীল করে তোলে।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Cherry Fabric</li><li>One Part Hoodie Jilbab Design</li><li>Abaya-তে সুন্দর Long Gher</li><li>Long Cherry Hijab</li><li>Body Free Size</li><li>আরামদায়ক ও পরিপাটি ফিট</li><li>সম্পূর্ণ পর্দাশীল ও Elegant Look</li><li>Full Set Available</li><li>Color - Only Black</li></ul>",
+            "images": [
+                "products/one-part-hoodie-jilbab-set-1.jpg",
+                "products/one-part-hoodie-jilbab-set-2.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 9,
+            "source_url": "https://www.lihanbd.com/product/251"
+        },
+        {
+            "sku": "LH-P0258",
+            "slug": "labbaik-set",
+            "name": "Labbaik Set",
+            "name_bn": "লাব্বাইক সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 2850,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Cherry",
+            "out_of_stock": [],
+            "short_description": "A plain Cherry abaya with a practical pocket system and a 2-layer ready hijab that goes on without a single pin.",
+            "description": "<p>সরল ডিজাইনে পরিপূর্ণ পর্দা—সাথে থাকুক ব্যবহারিক সুবিধা ও আরাম।</p>\n<p>Labbaik Set তৈরি করা হয়েছে তাদের জন্য, যারা অতিরিক্ত ডিজাইনের পরিবর্তে পছন্দ করেন সিম্পল, পরিপাটি ও মার্জিত Abaya। Plain Abaya-এর সাথে রয়েছে practical Pocket System, আর সেটটি সম্পূর্ণ করতে থাকছে 2-Layer Ready Hijab, যা কোনো পিন ছাড়াই সহজে পরিধান করা যায়।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Plain Pocket System Abaya</strong></p>\n<p>Premium Cherry Fabric দিয়ে তৈরি সিম্পল ও elegant Abaya। এর সাথে রয়েছে Pocket System, ফলে প্রয়োজনীয় ছোটখাটো জিনিস সহজেই সঙ্গে রাখা যায়।</p>\n<p><strong>2-Layer Ready Hijab</strong></p>\n<p>সেটের সাথে থাকছে 2-Layer System Ready Hijab। এর বিশেষ সুবিধা হলো—কোনো পিন ছাড়াই সহজে পরিধান করা যায়, ফলে অল্প সময়েই সুন্দর ও পরিপাটি হিজাবি লুক তৈরি করা সম্ভব।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Cherry Fabric Abaya</li><li>Simple &amp; Elegant Plain Design</li><li>Practical Pocket System</li><li>2-Layer Ready Hijab</li><li>Pin ছাড়া সহজে পরার সুবিধা</li><li>Comfortable &amp; Modest Look</li><li>Body Free Size</li><li>Full Set Available</li></ul>",
+            "images": [
+                "products/labbaik-set-1.jpg",
+                "products/labbaik-set-2.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 10,
+            "source_url": "https://www.lihanbd.com/product/258"
+        },
+        {
+            "sku": "LH-P0259",
+            "slug": "mahmuda-set",
+            "name": "Mahmuda Set",
+            "name_bn": "মাহমুদা সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 3200,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Cherry, Diamond Georgette",
+            "out_of_stock": [],
+            "short_description": "Premium Cherry abaya paired with a Diamond Georgette jilbab: simple lines, refined fabric combination.",
+            "description": "<p>সাদামাটা সৌন্দর্যের সাথে প্রিমিয়াম ফ্যাব্রিকের পরিপাটি সমন্বয়।</p>\n<p>Mahmuda Set হলো Abaya ও Jilbab-এর একটি elegant combination, যেখানে premium Cherry Abaya-এর সাথে থাকছে Diamond Jorjet Jilbab। Black &amp; Olive—দুটি সুন্দর colour option-এ সেটটি পাওয়া যাচ্ছে।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Premium Cherry Abaya</strong></p>\n<p>প্রিমিয়াম Cherry Fabric-এর তৈরি সুন্দর ও মার্জিত Abaya। এর পরিপাটি লুক যেকোনো পর্দাশীল outfit-কে আরও elegant করে তুলবে।</p>\n<p><strong>Diamond Jorjet Jilbab</strong></p>\n<p>Abaya-এর সাথে থাকছে Diamond Jorjet Fabric-এর Jilbab, যা পুরো সেটে যোগ করে আলাদা একটি sophisticated look।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Cherry Abaya</li><li>Diamond Jorjet Jilbab</li><li>Elegant &amp; Modest Design</li><li>Premium Fabric Combination</li><li>Full Set Available</li><li>আলাদা Abaya ও Jilbab নেওয়ার সুবিধা</li></ul>",
+            "images": [
+                "products/mahmuda-set-1.jpg",
+                "products/mahmuda-set-2.jpg",
+                "products/mahmuda-set-3.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 11,
+            "source_url": "https://www.lihanbd.com/product/259"
+        },
+        {
+            "sku": "LH-P0260",
+            "slug": "makki-set",
+            "name": "Makki Set",
+            "name_bn": "মাক্কি সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 2800,
+            "sale_price": 2400,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Dubai Cherry",
+            "out_of_stock": [],
+            "short_description": "Kuchi-design double-part borka in Dubai Cherry with a Cherry orna hijab, plus a free nose niqab.",
+            "description": "<p>পর্দাশীলতার সাথে থাকুক মার্জিত ডিজাইন ও প্রিমিয়াম ফ্যাব্রিকের ছোঁয়া।</p>\n<p>মাক্কি সেট তৈরি করা হয়েছে প্রিমিয়াম Dubai Cherry Fabric দিয়ে। কুচি ডিজাইনের ডাবল পার্ট বোরকার সাথে থাকছে Cherry Fabric-এর ওরনা হিজাব। সম্পূর্ণ সেটটি তৈরি করে একটি পরিপাটি, মার্জিত ও পর্দাশীল লুক।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Premium Double Part Borka</strong></p>\n<p>প্রিমিয়াম Dubai Cherry কাপড়ের তৈরি কুচি ডিজাইনের ডাবল পার্ট বোরকা। সুন্দর ডিজাইন ও মার্জিত গঠন এটিকে করে তুলেছে পরিপূর্ণ পর্দার জন্য একটি আকর্ষণীয় পোশাক।</p>\n<p><strong>Cherry Orna Hijab</strong></p>\n<p>বোরকার সাথে থাকছে Cherry Fabric-এর ওরনা হিজাব, যা পুরো সেটের লুককে আরও পরিপূর্ণ ও elegant করে তোলে।</p>\n<p><strong>Free Nose Niqab</strong></p>\n<p>ওরনা হিজাবের সাথে থাকছে একটি Nose Niqab সম্পূর্ণ ফ্রি। অর্থাৎ ওরনা হিজাব নিলেই নোজ নিকাবটি উপহার হিসেবে পাবেন।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Dubai Cherry Fabric</li><li>Kuchi Design Double Part Borka</li><li>Cherry Fabric Orna Hijab</li><li>Orna Hijab-এর সাথে Free Nose Niqab</li><li>মার্জিত ও পর্দাশীল ডিজাইন</li><li>Full Set Available</li></ul>",
+            "images": [
+                "products/makki-set-1.jpg",
+                "products/makki-set-2.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 12,
+            "source_url": "https://www.lihanbd.com/product/260"
+        },
+        {
+            "sku": "LH-P0264",
+            "slug": "nayra-set",
+            "name": "Nayra Set",
+            "name_bn": "নায়রা সেট",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 3000,
+            "sale_price": 2700,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Dubai Cherry",
+            "out_of_stock": [],
+            "short_description": "Summer-friendly Dubai Cherry abaya with a long koti and matching hijab: light, airy and polished.",
+            "description": "<p>গরমের দিনে আরাম, পর্দায় সৌন্দর্য—সাথে থাকুক পরিপাটি ও এলিগ্যান্ট লুক।</p>\n<p>নায়রা সেট তৈরি করা হয়েছে গরমের দিনের কথা মাথায় রেখে। প্রিমিয়াম Dubai Cherry Fabric-এর Summer Friendly Abaya-এর সাথে থাকছে Long Koti ও matching Cherry Hijab। হালকা ও আরামদায়ক ডিজাইনের কারণে এটি গরমের সময়ে নিয়মিত ব্যবহারের জন্য হতে পারে একটি চমৎকার পছন্দ।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Summer Friendly Abaya</strong></p>\n<p>প্রিমিয়াম Dubai Cherry কাপড়ের তৈরি হালকা ও আরামদায়ক Abaya। গরমের সময় পরিধানের উপযোগী করে তৈরি হওয়ায় এটি দীর্ঘসময় পরেও তুলনামূলক স্বাচ্ছন্দ্য বজায় রাখতে সাহায্য করবে।</p>\n<p><strong>Long Koti</strong></p>\n<p>আবায়ার সাথে থাকছে Dubai Cherry Fabric-এর একটি সুন্দর Long Koti, যা পুরো outfit-এ যোগ করবে একটি মার্জিত ও stylish touch।</p>\n<p><strong>Matching Cherry Hijab</strong></p>\n<p>সেটটি সম্পূর্ণ করতে থাকছে Dubai Cherry কাপড়ের matching Hijab, যা Abaya ও Koti-এর সাথে সুন্দরভাবে সমন্বয় করে একটি complete look তৈরি করে।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Dubai Cherry Fabric</li><li>Summer Friendly Abaya</li><li>Lightweight &amp; Comfortable Design</li><li>Long Koti</li><li>Matching Cherry Hijab</li><li>Elegant &amp; Modest Look</li><li>Full Set Available</li><li>Color - Only Black</li></ul>",
+            "images": [
+                "products/nayra-set-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 13,
+            "source_url": "https://www.lihanbd.com/product/264"
+        },
+        {
+            "sku": "LH-P0257",
+            "slug": "inner-hoodie-kaftan-set",
+            "name": "Inner Hoodie Kaftan Set",
+            "name_bn": "",
+            "category": "abaya-set",
+            "type": "simple",
+            "regular_price": 2700,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "",
+            "out_of_stock": [],
+            "short_description": "Three easy pieces that work together: an inner, a hoodie kaftan and an orna hijab.",
+            "description": "<p>সিম্পল, মার্জিত এবং পরিপাটি লুকের জন্য একটি সুন্দর কমপ্লিট সেট।</p>\n<p>একটি সুন্দর ও আরামদায়ক পর্দাশীল লুক সম্পূর্ণ করতে এই সেটে থাকছে প্রয়োজনীয় তিনটি পার্ট—ইনার, হুডি কাফতান এবং ওরনা হিজাব। তিনটি আইটেম একসাথে মিলিয়ে তৈরি হবে একটি পরিপূর্ণ ও এলিগ্যান্ট লুক।</p>\n<h4>সেটে যা যা থাকছে</h4>\n<p><strong>Inner</strong></p>\n<p>সেটের বেস হিসেবে থাকছে একটি Inner, যা পুরো পোশাকটিকে সুন্দরভাবে কমপ্লিট করতে সহায়তা করবে।</p>\n<p><strong>Hoodie Kaftan</strong></p>\n<p>সেটের মূল আকর্ষণ হিসেবে থাকছে সুন্দর Hoodie Kaftan—যা লুকটিতে যোগ করবে মার্জিত ও স্টাইলিশ ভাব।</p>\n<p><strong>Orna Hijab</strong></p>\n<p>সাথে থাকছে Orna Hijab, যা পুরো সেটের পর্দাশীল ও এলিগ্যান্ট লুককে আরও সম্পূর্ণ করে তুলবে।</p>\n<h4>Set Includes</h4>\n<ul><li>Inner</li><li>Hoodie Kaftan</li><li>Orna Hijab</li></ul>",
+            "images": [
+                "products/inner-hoodie-kaftan-set-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 14,
+            "source_url": "https://www.lihanbd.com/product/257"
+        },
+        {
+            "sku": "LH-P0269",
+            "slug": "long-khimar",
+            "name": "Long Khimar",
+            "name_bn": "পরিপূর্ণ পর্দার জন্য সুন্দর ও আরামদায়ক পছন্দ",
+            "category": "hijab",
+            "type": "variable",
+            "regular_price": 1500,
+            "sale_price": null,
+            "featured": true,
+            "tags": [],
+            "attributes": {
+                "size": [
+                    "52",
+                    "54"
+                ]
+            },
+            "fabric": "Cherry",
+            "out_of_stock": [],
+            "short_description": "Loose, flowing long khimar with an adjustable niqab. Slips on in under a minute, no pins needed. 100% original Cherry.",
+            "description": "<h4>খিমার ব্যবহারের বিশেষ সুবিধা</h4>\n<ul><li>১ মিনিটেরও কম সময়ে খুব সহজেই পরা যায়।</li><li>কোনো পিন বা ব্রুজের প্রয়োজন নেই।</li><li>খিমারের সাথেই নিকাব অ্যাডজাস্ট করা, আলাদা নিকাবের প্রয়োজন নেই।</li><li>Body Free Size — আরামদায়ক ঢিলেঢালা ফিট।</li><li>Full Coverage নিশ্চিত করে পরিপূর্ণ পর্দার সুবিধা।</li></ul>\n<h4>ফেব্রিক্স</h4>\n<p>100% Original Cherry Fabric — কোয়ালিটির গ্যারান্টি।</p>\n<p>ফেব্রিক্স পছন্দ না হলে দেখে ফেরত দেওয়ার সুবিধা রয়েছে।</p>\n<ul><li>Front Length: 63&quot;</li><li>Back Length: 68&quot;</li><li>Gher: 210&quot;</li></ul>",
+            "images": [
+                "products/long-khimar-1.jpg"
+            ],
+            "reviews": [
+                {
+                    "author": "Afsana Mim",
+                    "rating": 5,
+                    "content": "Takes less than a minute to wear and the length is perfect. Will order another colour."
+                },
+                {
+                    "author": "Jannatul Ferdous",
+                    "rating": 5,
+                    "content": "Loose and comfortable, no pins needed. Good quality for daily use."
+                }
+            ],
+            "menu_order": 15,
+            "source_url": "https://www.lihanbd.com/product/269"
+        },
+        {
+            "sku": "LH-P0270",
+            "slug": "prayer-long-hijab-set",
+            "name": "Prayer Long Hijab Set",
+            "name_bn": "",
+            "category": "hijab",
+            "type": "variable",
+            "regular_price": 1550,
+            "sale_price": null,
+            "featured": false,
+            "tags": [
+                "inspiration"
+            ],
+            "attributes": {
+                "color": [
+                    "Lavender",
+                    "Mint"
+                ],
+                "size": [
+                    "50",
+                    "52",
+                    "54",
+                    "56",
+                    "58"
+                ]
+            },
+            "fabric": "Cotton",
+            "out_of_stock": [],
+            "short_description": "Soft premium cotton prayer set: long hijab, lace-trim niqab and long skirt in a gentle print.",
+            "description": "<p>পর্দা, স্বাচ্ছন্দ্য ও সৌন্দর্যের একসাথে পরিপূর্ণ সমন্বয়</p>\n<p>নামাজের সময় আরামদায়ক ও পরিপূর্ণ পর্দার জন্য নিয়ে আসলাম আমাদের Premium Cotton নামাজের লং হিজাব সেট।</p>\n<h4>সেটের সাথে যা যা থাকছে</h4>\n<ul><li>লং হিজাব — পরিপূর্ণ কাভারেজের জন্য</li><li>লেইস ডিজাইন করা নিকাব — সুন্দর ও এলিগেন্ট লুকের জন্য</li><li>লং স্কার্ট — আরামদায়ক ও পর্দাশীল পরিধানের জন্য</li></ul>\n<h4>ফেব্রিক্স</h4>\n<ul><li>Premium Cotton</li></ul>\n<p>নরম, আরামদায়ক ও নামাজের জন্য উপযোগী ফেব্রিক্স।</p>",
+            "images": [
+                "products/prayer-long-hijab-set-1.jpg",
+                "products/prayer-long-hijab-set-2.jpg",
+                "products/prayer-long-hijab-set-3.jpg"
+            ],
+            "reviews": [
+                {
+                    "author": "Sadia Islam",
+                    "rating": 5,
+                    "content": "Soft cotton and the lace niqab is beautiful. Perfect for daily salah."
+                },
+                {
+                    "author": "Mariam Chowdhury",
+                    "rating": 5,
+                    "content": "Gifted this to my sister. The lavender colour looks even nicer in person."
+                }
+            ],
+            "menu_order": 16,
+            "source_url": "https://www.lihanbd.com/product/270"
+        },
+        {
+            "sku": "LH-P0268",
+            "slug": "haura-v-shape-hijab",
+            "name": "Haura V-Shape Hijab",
+            "name_bn": "",
+            "category": "hijab",
+            "type": "simple",
+            "regular_price": 950,
+            "sale_price": 700,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Saudi Georgette",
+            "out_of_stock": [],
+            "short_description": "V-shape design in thick Saudi georgette with generous coverage: 21\" at the front, 41\" at the back.",
+            "description": "<p>মার্জিত V-Shape ডিজাইন ও প্রিমিয়াম ফ্যাব্রিকের সমন্বয়ে পর্দার জন্য একটি সুন্দর নিকাব।</p>\n<p>Haura V-Shape Niqab তৈরি করা হয়েছে Saudi Thick Jorjet Fabric দিয়ে। এর লং ডিজাইন সামনে ও পেছনে সুন্দর কাভারেজ প্রদান করে, যা পর্দাশীল ও elegant লুকের জন্য উপযোগী।</p>\n<h4>Product Highlights</h4>\n<ul><li>Premium Quality Haura V-Shape Niqab</li><li>Saudi Thick Jorjet Fabric</li><li>Elegant V-Shape Design</li><li>Long &amp; Full Coverage Design</li><li>পর্দাশীল ও মার্জিত লুক</li></ul>\n<h4>Size Details</h4>\n<ul><li>Front Part: 21&quot;</li><li>Back Part: 41&quot;</li></ul>",
+            "images": [
+                "products/haura-v-shape-hijab-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 17,
+            "source_url": "https://www.lihanbd.com/product/268"
+        },
+        {
+            "sku": "LH-P0267",
+            "slug": "2-part-niqab",
+            "name": "2-Part Niqab",
+            "name_bn": "২ পার্ট নিকাব",
+            "category": "niqab",
+            "type": "simple",
+            "regular_price": 850,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "Saudi Chiffon",
+            "out_of_stock": [],
+            "short_description": "Light, breathable two-part niqab in premium Saudi chiffon for everyday wear.",
+            "description": "<p>সুন্দর, পরিপাটি ও পর্দাশীল লুকের জন্য একটি আরামদায়ক ২ পার্ট নিকাব।</p>\n<p>প্রিমিয়াম Saudi Chiffon Fabric দিয়ে তৈরি এই নিকাবটি দৈনন্দিন ব্যবহার ও পূর্ণ পর্দার লুকের সাথে সুন্দরভাবে মানানসই।</p>\n<h4>Product Highlights</h4>\n<ul><li>2-Part Niqab</li><li>Premium Saudi Chiffon Fabric</li><li>হালকা ও পরিপাটি ডিজাইন</li><li>পর্দাশীল লুকের জন্য উপযোগী</li><li>সহজে পরিধানযোগ্য</li><li>Elegant &amp; Modest Appearance</li></ul>\n<h4>Fabric</h4>\n<ul><li>Saudi Chiffon</li></ul>",
+            "images": [
+                "products/2-part-niqab-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 18,
+            "source_url": "https://www.lihanbd.com/product/267"
+        },
+        {
+            "sku": "LH-N001",
+            "slug": "maliji-hijab-set",
+            "name": "Maliji Hijab Set",
+            "name_bn": "",
+            "category": "hijab",
+            "type": "simple",
+            "regular_price": 1250,
+            "sale_price": null,
+            "featured": true,
+            "tags": [],
+            "attributes": [],
+            "fabric": "",
+            "out_of_stock": [],
+            "short_description": "A Malaysian-style hijab set with a long, soft drape and an attached niqab: comfortable, full coverage for daily wear.",
+            "description": "<p>The Maliji Hijab Set gives a soft, rounded frame around the face and falls long over the chest and back. The niqab is attached, so the whole set goes on in one step.</p><ul><li>Long, generous drape</li><li>Attached niqab</li><li>Breathable fabric for all-day wear</li><li>Free size</li></ul>",
+            "images": [
+                "products/maliji-hijab-set-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 19,
+            "source_url": ""
+        },
+        {
+            "sku": "LH-N002",
+            "slug": "foodie-niqab",
+            "name": "Foodie Niqab",
+            "name_bn": "",
+            "category": "niqab",
+            "type": "simple",
+            "regular_price": 650,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "",
+            "out_of_stock": [],
+            "short_description": "A practical niqab with a lift-up front panel, so you can eat and drink comfortably without removing it.",
+            "description": "<p>Designed for long days out: the front panel lifts easily for eating and drinking, then falls neatly back into place.</p><ul><li>Lift-up front panel</li><li>Soft, light fabric</li><li>Elastic back for a secure fit</li></ul>",
+            "images": [
+                "products/foodie-niqab-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 20,
+            "source_url": ""
+        },
+        {
+            "sku": "LH-N003",
+            "slug": "one-part-hoodie-niqab",
+            "name": "One Part Hoodie Niqab",
+            "name_bn": "",
+            "category": "niqab-combo",
+            "type": "simple",
+            "regular_price": 990,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "",
+            "out_of_stock": [],
+            "short_description": "Hoodie-style hijab and niqab in one piece: quick to wear, secure and fully covering.",
+            "description": "<p>A one-piece hoodie hijab with the niqab already attached. No pins, no fuss, and it stays in place all day.</p><ul><li>Hijab and niqab in one piece</li><li>Hoodie cap keeps it secure</li><li>Free size</li></ul>",
+            "images": [
+                "products/one-part-hoodie-niqab-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 21,
+            "source_url": ""
+        },
+        {
+            "sku": "LH-N004",
+            "slug": "cotton-inner-cap",
+            "name": "Cotton Inner Cap",
+            "name_bn": "",
+            "category": "inner-cap",
+            "type": "variable",
+            "regular_price": 220,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": {
+                "color": [
+                    "Black",
+                    "White",
+                    "Brown",
+                    "Mustard",
+                    "Mauve"
+                ]
+            },
+            "fabric": "Stretch cotton",
+            "out_of_stock": [],
+            "short_description": "Soft stretch-cotton inner cap that keeps your hijab in place and your hair covered. Available in five colours.",
+            "description": "<p>An everyday essential under any hijab. The stretch cotton holds gently without pressing, and the tube style covers the hairline completely.</p><ul><li>Stretch cotton</li><li>Non-slip hold</li><li>Five colours</li></ul>",
+            "images": [
+                "products/cotton-inner-cap-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 22,
+            "source_url": ""
+        },
+        {
+            "sku": "LH-N005",
+            "slug": "screen-touch-hand-socks",
+            "name": "Screen Touch Hand Socks",
+            "name_bn": "",
+            "category": "hat-moja",
+            "type": "simple",
+            "regular_price": 350,
+            "sale_price": null,
+            "featured": false,
+            "tags": [],
+            "attributes": [],
+            "fabric": "",
+            "out_of_stock": [],
+            "short_description": "Hand socks (hat moja) with touch-screen fingertips, so you stay covered while using your phone.",
+            "description": "<p>Soft, stretchy hand socks with conductive fingertips that work on phone screens. Long cuffs stay tucked under your sleeves.</p><ul><li>Touch-screen fingertips</li><li>Long cuff</li><li>Stretch fit</li></ul>",
+            "images": [
+                "products/screen-touch-hand-socks-1.jpg"
+            ],
+            "reviews": [],
+            "menu_order": 23,
+            "source_url": ""
+        }
+    ]
+}

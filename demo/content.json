@@ -1,0 +1,234 @@
+{
+	"version": 1,
+	"notes": "Demo pages and posts for the Lihan theme. Blocks: [type, value]. Types: h2, h3, p (inline HTML allowed), ul (list of inline HTML strings), table ({head: [], rows: [[]]}), buttons ([[label, url]]). Tokens such as {phone}, {whatsapp_url}, {messenger_url}, {facebook_url}, {shop_url}, {page:slug}, {cat:slug} and {myaccount_url} are replaced on import.",
+	"pages": [
+		{
+			"slug": "home",
+			"title": "Home",
+			"role": "front",
+			"blocks": []
+		},
+		{
+			"slug": "blog",
+			"title": "Blog",
+			"role": "posts",
+			"blocks": []
+		},
+		{
+			"slug": "about-us",
+			"title": "About Us",
+			"blocks": [
+				["p", "Lihan Lifestyle began with a simple wish: modest clothing that feels as good as it looks, made right here in Bangladesh. Every abaya set, hijab and niqab we sell is cut and stitched in our own workshop by skilled tailors who care about the small details."],
+				["h2", "What we make"],
+				["p", "We design complete <a href=\"{cat:abaya-set}\">abaya sets</a> with matching hijab and niqab, everyday <a href=\"{cat:hijab}\">hijabs and khimars</a>, light <a href=\"{cat:niqab}\">niqabs</a>, and the essentials that finish a look: <a href=\"{cat:inner-cap}\">inner caps</a> and <a href=\"{cat:hat-moja}\">hat moja</a>."],
+				["h2", "Our promise"],
+				["ul", [
+					"<strong>Honest fabric.</strong> We name the fabric on every product (Cherry, Dubai Cherry, Saudi chiffon, georgette, cotton) and you can check it before you pay.",
+					"<strong>Cash on delivery.</strong> Not a single taka in advance. Pay when the parcel is in your hands.",
+					"<strong>Easy exchange.</strong> Size not right? Exchange within 7 days of delivery.",
+					"<strong>Real help.</strong> Message us on WhatsApp or Messenger and a real person from our team will answer."
+				]],
+				["p", "Thank you for choosing Lihan. We hope our clothes become a comfortable part of your everyday."],
+				["buttons", [["Shop the collection", "{shop_url}"]]]
+			]
+		},
+		{
+			"slug": "contact",
+			"title": "Contact",
+			"blocks": [
+				["p", "We are happy to help with sizing, fabric questions, order updates and custom requests. The quickest way to reach us is WhatsApp or Messenger."],
+				["h2", "Get in touch"],
+				["ul", [
+					"<strong>Hotline:</strong> <a href=\"tel:{phone}\">{phone}</a>",
+					"<strong>WhatsApp:</strong> <a href=\"{whatsapp_url}\">Chat with us on WhatsApp</a>",
+					"<strong>Messenger:</strong> <a href=\"{messenger_url}\">Message us on Facebook</a>",
+					"<strong>Facebook:</strong> <a href=\"{facebook_url}\">Lihan Lifestyle</a>"
+				]],
+				["h2", "Opening hours"],
+				["table", {"head": ["Day", "Hours"], "rows": [["Saturday to Thursday", "10:00 to 20:00"], ["Friday", "Closed"]]}],
+				["p", "Messages sent outside opening hours are answered the next working day, in sha Allah."],
+				["buttons", [["Chat on WhatsApp", "{whatsapp_url}"], ["Call {phone}", "tel:{phone}"]]]
+			]
+		},
+		{
+			"slug": "faq",
+			"title": "FAQ",
+			"blocks": [
+				["h3", "How long does delivery take?"],
+				["p", "Inside Dhaka, orders usually arrive in 1 to 2 working days. Outside Dhaka, please allow 2 to 4 working days. See <a href=\"{page:delivery-information}\">Delivery Information</a> for details."],
+				["h3", "Do you offer cash on delivery?"],
+				["p", "Yes, all over Bangladesh. You pay the delivery person when you receive your parcel. You can also pay by bKash or Nagad if you prefer."],
+				["h3", "Can I exchange a product?"],
+				["p", "Yes. If the size does not fit, you can exchange within 7 days of delivery as long as the product is unused, unwashed and has its tags. Read our <a href=\"{page:return-exchange-policy}\">Return &amp; Exchange Policy</a>."],
+				["h3", "How do I choose my size?"],
+				["p", "Our abaya sizes (50 to 58) are the length in inches from shoulder to ankle. The <a href=\"{page:size-guide}\">Size Guide</a> shows which size suits your height."],
+				["h3", "How should I wash Cherry fabric?"],
+				["p", "Hand wash or use a gentle machine cycle in cold water with mild detergent. Dry in the shade and iron on low heat."],
+				["h3", "Can I track my order?"],
+				["p", "Yes. We send you a confirmation call or message when your order ships. You can also check your order status in <a href=\"{myaccount_url}\">My Account</a>."],
+				["h3", "Do you take custom orders?"],
+				["p", "For bulk or custom-length orders, message us on <a href=\"{whatsapp_url}\">WhatsApp</a> with the product name, size and quantity."]
+			]
+		},
+		{
+			"slug": "delivery-information",
+			"title": "Delivery Information",
+			"blocks": [
+				["p", "We deliver to every district in Bangladesh through trusted courier partners."],
+				["table", {"head": ["Area", "Delivery charge", "Usual time"], "rows": [["Inside Dhaka", "৳70", "1 to 2 working days"], ["Outside Dhaka", "৳130", "2 to 4 working days"], ["Orders over ৳5,000", "Free", "As above"]]}],
+				["h2", "How it works"],
+				["ul", [
+					"After you place an order, our team calls or messages you to confirm it.",
+					"Orders confirmed before 5 pm are usually handed to the courier the same or next day.",
+					"The courier will call you before delivery. Please keep your phone close.",
+					"Check the product in front of the delivery person, then pay."
+				]],
+				["p", "Delivery can take a little longer during Eid, public holidays and bad weather. We will keep you informed."]
+			]
+		},
+		{
+			"slug": "return-exchange-policy",
+			"title": "Return & Exchange Policy",
+			"blocks": [
+				["p", "We want you to love what you ordered. If something is not right, here is how we make it right."],
+				["h2", "Exchange"],
+				["ul", [
+					"You can exchange for a different size or product within 7 days of delivery.",
+					"The product must be unused, unwashed and returned with its original tags and packaging.",
+					"For a size exchange, you pay the delivery charge both ways. If we sent the wrong item, we cover it."
+				]],
+				["h2", "Check before you pay"],
+				["p", "With cash on delivery you can open the parcel in front of the delivery person. If the fabric or product is not what you expected, you may return it on the spot by paying only the delivery charge."],
+				["h2", "Damaged or wrong item"],
+				["p", "If your product arrives damaged or is not the item you ordered, contact us within 48 hours with a photo. We will replace it at no extra cost."],
+				["h2", "Refunds"],
+				["p", "If a replacement is not available, we refund to your bKash or Nagad number within 7 working days after we receive the product."],
+				["p", "To start an exchange, message us on <a href=\"{whatsapp_url}\">WhatsApp</a> or call <a href=\"tel:{phone}\">{phone}</a>."]
+			]
+		},
+		{
+			"slug": "privacy-policy",
+			"title": "Privacy Policy",
+			"role": "privacy",
+			"blocks": [
+				["p", "This policy explains what information Lihan Lifestyle collects when you use this website and how we use it."],
+				["h2", "What we collect"],
+				["ul", [
+					"Your name, phone number, delivery address and email (if given) when you place an order or create an account.",
+					"Your order history and messages you send us.",
+					"Basic technical data such as browser type and pages visited, used to keep the site working and secure."
+				]],
+				["h2", "How we use it"],
+				["ul", [
+					"To confirm, deliver and support your orders.",
+					"To answer your questions and handle exchanges.",
+					"To send offers, only if you subscribe. You can unsubscribe at any time."
+				]],
+				["h2", "Sharing"],
+				["p", "We share your name, phone number and address only with our courier partners so they can deliver your order. We never sell your information."],
+				["h2", "Your choices"],
+				["p", "You can ask us to see, correct or delete your personal information by contacting us at <a href=\"tel:{phone}\">{phone}</a> or on <a href=\"{messenger_url}\">Messenger</a>."]
+			]
+		},
+		{
+			"slug": "terms-conditions",
+			"title": "Terms & Conditions",
+			"role": "terms",
+			"blocks": [
+				["p", "By using this website and placing an order, you agree to the following terms."],
+				["h2", "Orders and prices"],
+				["ul", [
+					"All prices are in Bangladeshi Taka (৳) and include VAT where applicable.",
+					"An order is confirmed only after our team confirms it by phone or message.",
+					"We may cancel an order if a product is out of stock or the details cannot be confirmed. You will not be charged in that case."
+				]],
+				["h2", "Product colours"],
+				["p", "We photograph our products carefully, but colours can look slightly different on different screens."],
+				["h2", "Delivery, exchange and refunds"],
+				["p", "Delivery charges and times are listed on the <a href=\"{page:delivery-information}\">Delivery Information</a> page. Exchanges and refunds follow our <a href=\"{page:return-exchange-policy}\">Return &amp; Exchange Policy</a>."],
+				["h2", "Use of this website"],
+				["p", "Photos and text on this site belong to Lihan Lifestyle and may not be copied for commercial use without permission."]
+			]
+		},
+		{
+			"slug": "order-procedure",
+			"title": "Order Procedure",
+			"blocks": [
+				["p", "Ordering from Lihan takes only a few minutes, and you pay when your parcel arrives."],
+				["h2", "Order online"],
+				["ul", [
+					"<strong>1. Choose your product.</strong> Browse the <a href=\"{shop_url}\">shop</a> and open a product to see photos, fabric and sizes.",
+					"<strong>2. Select size or colour.</strong> Not sure? Check the <a href=\"{page:size-guide}\">Size Guide</a>.",
+					"<strong>3. Add to bag and check out.</strong> Enter your name, phone number and full address.",
+					"<strong>4. Confirm.</strong> Our team calls or messages you to confirm the order.",
+					"<strong>5. Receive and pay.</strong> Check the product and pay the delivery person in cash."
+				]],
+				["h2", "Order by message"],
+				["p", "Prefer to chat? Send the product name or a screenshot with your size, name, phone number and address on <a href=\"{whatsapp_url}\">WhatsApp</a> or <a href=\"{messenger_url}\">Messenger</a>, and we will place the order for you."]
+			]
+		},
+		{
+			"slug": "size-guide",
+			"title": "Size Guide",
+			"blocks": [
+				["p", "Abaya and borka sizes are the length in inches, measured from the top of the shoulder to the ankle. Choose the size that matches your height, or measure an abaya that fits you well."],
+				["table", {"head": ["Size", "Length", "Suits height", "Chest (free fit)"], "rows": [["50", "50\"", "4'10\" to 5'0\"", "up to 44\""], ["52", "52\"", "5'0\" to 5'2\"", "up to 46\""], ["54", "54\"", "5'2\" to 5'4\"", "up to 48\""], ["56", "56\"", "5'4\" to 5'6\"", "up to 50\""], ["58", "58\"", "5'6\" to 5'8\"", "up to 52\""]]}],
+				["h2", "Tips"],
+				["ul", [
+					"If you wear heels or prefer a longer fall, choose one size up.",
+					"Hijabs, khimars and niqabs are free size unless the product page says otherwise.",
+					"Between two sizes? Message us on <a href=\"{whatsapp_url}\">WhatsApp</a> with your height and we will help you choose."
+				]]
+			]
+		}
+	],
+	"posts": [
+		{
+			"slug": "how-to-layer-an-abaya-set",
+			"title": "How to Layer an Abaya Set for Every Season",
+			"image": "blog/layering-abaya.jpg",
+			"excerpt": "One abaya set, three ways: simple layering ideas that keep you covered and comfortable from the summer heat to winter evenings.",
+			"blocks": [
+				["p", "A good abaya set is the base of a modest wardrobe. With a few smart layers, the same set can carry you through the whole year."],
+				["h2", "Summer: keep it light"],
+				["p", "Choose a breathable fabric like Cherry and pair your abaya with a single-layer hijab. Sets such as the <a href=\"{product:hiba-set}\">Hiba Set</a> are made for hot days."],
+				["h2", "Monsoon: quick-dry and practical"],
+				["p", "Go for darker shades and fabrics that dry fast. A ready hijab with an attached niqab saves time when you are rushing out between showers."],
+				["h2", "Winter: add a long koti or jilbab"],
+				["p", "Layer a long koti or a jilbab over your abaya for warmth without losing your silhouette. The <a href=\"{product:hoodie-jilbab-set}\">Hoodie Jilbab Set</a> works beautifully on cool evenings."]
+			]
+		},
+		{
+			"slug": "choosing-fabric-for-summer",
+			"title": "Cherry, Chiffon or Cotton? Choosing Fabric for Hot Days",
+			"image": "blog/summer-fabrics.jpg",
+			"excerpt": "Bangladeshi summers are long. Here is a quick guide to the fabrics that keep you cool while staying fully covered.",
+			"blocks": [
+				["p", "The right fabric makes all the difference when the temperature climbs. Here is how our most-loved fabrics compare."],
+				["h2", "Cherry and Dubai Cherry"],
+				["p", "Soft, opaque and gently flowing. Cherry does not cling and breathes well, which is why we use it for most of our abaya sets."],
+				["h2", "Saudi chiffon and georgette"],
+				["p", "Very light and airy, perfect for niqabs and outer layers. Look at the <a href=\"{product:2-part-niqab}\">2-Part Niqab</a> in Saudi chiffon."],
+				["h2", "Cotton"],
+				["p", "Natural, soft and absorbent. Ideal for prayer sets and inner caps that you wear for long hours."]
+			]
+		},
+		{
+			"slug": "caring-for-your-hijab",
+			"title": "5 Simple Ways to Make Your Hijab Last Longer",
+			"image": "blog/hijab-care.jpg",
+			"excerpt": "Wash, dry and store your hijabs the right way and they will stay soft and beautiful for years.",
+			"blocks": [
+				["p", "Your hijab is with you every day. A little care keeps it looking new."],
+				["ul", [
+					"<strong>Wash cold.</strong> Use cold water and a mild detergent. Hot water fades colour.",
+					"<strong>Skip the wringing.</strong> Gently press out the water instead of twisting.",
+					"<strong>Dry in the shade.</strong> Strong sun can fade dark colours, especially black.",
+					"<strong>Iron low.</strong> Use a low setting or steam, and iron chiffon through a thin cloth.",
+					"<strong>Store folded or rolled.</strong> Avoid hanging heavy hijabs on thin hooks, which stretches them."
+				]],
+				["p", "Need a fresh one? Browse our <a href=\"{cat:hijab}\">hijab collection</a>."]
+			]
+		}
+	]
+}

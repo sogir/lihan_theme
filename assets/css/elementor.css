@@ -1,0 +1,128 @@
+/**
+ * Lihan: Elementor compatibility.
+ *
+ * Loaded wherever Elementor loads its frontend styles (inc/elementor.php),
+ * including the editor preview. Small fixes only:
+ * - Elementor-built pages get no theme padding or width limits;
+ * - Lihan section widgets do not double the gutters inside boxed Elementor
+ *   containers/sections, and keep their own vertical rhythm;
+ * - Elementor's own elements fall back to the theme font (focus styles come
+ *   from main.css's global :focus-visible rule);
+ * - editor-only notices of the Lihan widgets.
+ *
+ * Rules that only provide fallbacks use :where() (zero specificity), so
+ * anything set in Elementor (kit globals, widget style controls) still wins.
+ */
+
+/* --------------------------------------------------------------------------
+ * Elementor pages: content is not constrained by the theme
+ * ----------------------------------------------------------------------- */
+
+.lh-main--elementor,
+.lh-main--full-width {
+	padding: 0;
+	max-width: none;
+}
+
+.lh-main--elementor > .elementor,
+.lh-main--full-width .lh-full-width > .elementor {
+	width: 100%;
+}
+
+/* Elementor's own page templates (Canvas / Full Width) keep a clean canvas. */
+body.elementor-template-canvas,
+body.elementor-template-full-width {
+	overflow-x: clip;
+}
+
+/* --------------------------------------------------------------------------
+ * Theme font as the fallback for Elementor elements
+ * (the kit's global typography overrides these when it is set)
+ * ----------------------------------------------------------------------- */
+
+:where(.elementor) :where(.elementor-button, .elementor-heading-title, .elementor-field, .elementor-field-textual, .elementor-tab-title, .e-n-tab-title, .e-n-accordion-item-title) {
+	font-family: var(--lh-font, "Montserrat", Helvetica, Arial, sans-serif);
+}
+
+:where(.elementor) :where(.elementor-button) {
+	letter-spacing: 0.65px;
+}
+
+/* --------------------------------------------------------------------------
+ * Lihan section widgets
+ * ----------------------------------------------------------------------- */
+
+/* Sections bring their own padding: no extra spacing below the widget. */
+.elementor-widget[class*="elementor-widget-lihan-"] {
+	--kit-widget-spacing: 0px;
+}
+
+.elementor-widget[class*="elementor-widget-lihan-"] > .elementor-widget-container {
+	padding: 0;
+}
+
+/* Promo panel overlaps the section edges by design; carousels need their
+ * shadows and focus rings. Never clip them. */
+.elementor-widget-lihan-promo-banner,
+.elementor-widget-lihan-promo-banner > .elementor-widget-container {
+	overflow: visible;
+}
+
+/*
+ * Boxed containers/sections already limit the width and add their own
+ * padding, so the theme container inside a Lihan section drops its gutters
+ * there. In full-width containers the theme gutters stay, so text never
+ * touches the screen edge.
+ */
+.e-con-boxed > .e-con-inner > .elementor-widget[class*="elementor-widget-lihan-"] .lh-container,
+.elementor-section-boxed > .elementor-container .elementor-widget[class*="elementor-widget-lihan-"] .lh-container {
+	max-width: none;
+	padding-inline: 0;
+}
+
+.e-con-boxed > .e-con-inner > .elementor-widget[class*="elementor-widget-lihan-"] .lh-container--narrow,
+.elementor-section-boxed > .elementor-container .elementor-widget[class*="elementor-widget-lihan-"] .lh-container--narrow {
+	max-width: 780px;
+}
+
+/* Inside columns or narrow containers, keep 3-up grids from cramping. */
+@media (min-width: 768px) {
+	.elementor-column:not(.elementor-col-100) .elementor-widget-lihan-category-grid .lh-cat-grid:not(.lh-cat-grid--1) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* The image + text grid adds a large inline padding on desktop; inside a
+ * column or a nested container that is too much. */
+.elementor-column:not(.elementor-col-100) .elementor-widget-lihan-image-text .lh-about__grid,
+.e-con .e-con .elementor-widget-lihan-image-text .lh-about__grid {
+	padding-inline: 0;
+}
+
+/* --------------------------------------------------------------------------
+ * Editor
+ * ----------------------------------------------------------------------- */
+
+.lh-elementor-notice {
+	padding: 24px;
+	border: 1px dashed var(--lh-border, #e4e4e4);
+	background: var(--lh-bg-alt, #f2f3f6);
+	color: var(--lh-muted, #6b6b6b);
+	font-family: var(--lh-font, "Montserrat", Helvetica, Arial, sans-serif);
+	font-size: 13px;
+	line-height: 1.6;
+	text-align: center;
+}
+
+/* The theme's sticky header must not cover Elementor's editor handles. */
+body.elementor-editor-active .lh-site-header--sticky,
+body.elementor-editor-active.lh-sticky-header .lh-site-header {
+	position: relative;
+	top: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.elementor-widget[class*="elementor-widget-lihan-"] * {
+		scroll-behavior: auto;
+	}
+}
